@@ -1,8 +1,8 @@
 import React from 'react';
-import NavBar from './components/NavBar';
-import './App.css';
+import NavBar from '../components/NavBar';
+import '../App.css';
 
-function App() {
+function Home() {
   return (
     <div class="App-header">
       <NavBar />
@@ -10,4 +10,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
