@@ -1,0 +1,18 @@
+{
+    "transactions": [
+       {
+           "id": 1,
+           "amount": 1000,
+           "date": "2024-1-1",
+           "category": "income",
+           "description": "miscellaneous income"
+       },
+       {
+           "id": 2,
+           "amount": 2000,
+           "date": "2024-1-7",
+           "category": "expense",
+           "description": "home"
+       }
+    ]   
+   }
