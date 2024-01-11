@@ -1,12 +1,14 @@
 @media (max-width: 768px) {
  
-  .dbBoxPrimary {
+  .dbBoxPrimary,
+  .dbIncome {
       grid-column: 1/13;
       background-color: grey;
       border: 1px solid red;
     }
     
-    .dbTickerSideBar {
+    .dbTickerSideBar,
+    .dbIncome-num {
       grid-column: 1/13;
       border: 1px solid rgb(255, 0, 43);
       background-color: aliceblue;

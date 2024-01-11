@@ -43,16 +43,19 @@
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   padding: 2% 5%;
+  background-color: rgb(219, 219, 219);
 
 }
 
-.dbBoxPrimary {
+.dbBoxPrimary,
+.dbIncome {
   grid-column: 1/9;
-  background-color: grey;
+  background-color: rgb(209, 250, 255);
   border: 1px solid red;
 }
 
-.dbTickerSideBar {
+.dbTickerSideBar,
+.dbIncome-num {
   grid-column: 9/13;
   border: 1px solid blue;
   background-color: rgb(255, 214, 167);
