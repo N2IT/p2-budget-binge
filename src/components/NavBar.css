@@ -1,0 +1,13 @@
+.nav-link {
+    display: inline-block;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+    padding: 0 25px;
+}
+
+.active {
+    color: #bcff00;
+    text-decoration: underline;
+
+}
