@@ -1,3 +1,4 @@
+import App from './App'
 import Home from './pages/Home';
 import AddTransactions from './pages/AddTransactions';
 import Transactions from './pages/Transactions'
@@ -11,7 +12,7 @@ const routes = [
     children: [
       {
         path: '/',
-        element: '/home'
+        element: <Home />
       },
       {
         path: '/transactions',
