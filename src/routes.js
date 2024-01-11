@@ -6,18 +6,22 @@ import ErrorPage from './pages/ErrorPage';
 const routes = [
   {
     path: "/",
-    element: <Home />,
-    errorElement: <ErrorPage />
-  },
-  {
-    path: '/transactions',
-    element: <Transactions />,
-    errorElement: <ErrorPage />
-  },
-  {
-    path: '/add-transactions',
-    element: <AddTransactions />,
-    errorElement: <ErrorPage />
+    element: <App />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: '/',
+        element: '/home'
+      },
+      {
+        path: '/transactions',
+        element: <Transactions />,
+      },
+      {
+        path: '/add-transactions',
+        element: <AddTransactions />,
+      }
+    ]
   }
 ];
 
