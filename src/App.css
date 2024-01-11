@@ -47,6 +47,7 @@
 
 }
 
+/**************************** HOME page ****************************/
 .dbBoxPrimary,
 .dbIncome {
   grid-column: 1/9;
@@ -66,3 +67,26 @@
   border: 1px solid black;
   background-color: aqua;
 }
+/**************************** End HOME page ****************************/
+
+/**************************** Transactions page ************************/
+th {
+  font-size: 3vw;
+  width: 1%;
+}
+
+td {
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+table>td {
+  font-size: 5vw;
+  color: red;
+}
+
+
+
+
+
+/**************************** End HOME page ****************************/

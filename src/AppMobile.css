@@ -1,4 +1,17 @@
 @media (max-width: 768px) {
+  .nav-link {
+    display: inline-block;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+    padding: 0 5px;
+  }
+
+    .active {
+      color: #bcff00;
+      text-decoration: underline;
+  }
+
  
   .dbBoxPrimary,
   .dbIncome {
