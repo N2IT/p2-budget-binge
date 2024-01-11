@@ -4,16 +4,27 @@ import './index.css';
 import Home from './pages/Home';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import AddTransactions from './pages/AddTransactions';
+import Transactions from './pages/Transactions'
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />
+  },
+  {
+    path: '/transactions',
+    element: <Transactions />
+  },
+  {
+    path: '/add-transactions',
+    element: <AddTransactions />
   }
+
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Home />);
+root.render(<RouterProvider router={router}/>);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
