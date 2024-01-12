@@ -1,16 +1,6 @@
-import { useState, useEffect } from 'react'
 
 
-function BalanceSummary() {
-
-    const [transactions, setTransactions] = useState([])
-    const initial = 0
-
-    useEffect(() => {
-        fetch('http://localhost:3000/transactions')
-            .then(r => r.json())
-            .then(transactions => setTransactions(transactions))
-    }, [])
+function BalanceSummary({ transactions, initial}) {
 
     //fetch db 
     //filter by category
