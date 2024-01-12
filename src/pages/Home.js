@@ -35,7 +35,6 @@ function Home() {
     return (
         <>
             <main>
-                {/* <Outlet context={stocks}/> */}
                 <h1>Dashboard / Balance</h1>
                 <div className="grid-container">
                     <BalanceSummary />
