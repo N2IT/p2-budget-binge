@@ -1,4 +1,3 @@
-import { Outlet, useOutletContext } from "react-router-dom";
 import StockComponent from "../components/StockComponent";
 import BalanceSummary from '../components/BalanceSummary';
 import CategorySummary from "../components/CategorySummary";
@@ -55,7 +54,7 @@ function Home() {
                     <div className="category-breakdown">
                         <h2>% Breakdown by Expense</h2>
                         <div className="grid-container">
-                            <CategorySummary transactions={transactions} />
+                            <CategorySummary transactions={transactions} initial={initial} />
                         </div>
                     </div>
                 </div>
