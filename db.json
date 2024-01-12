@@ -90,6 +90,13 @@
       "amount": 899.44,
       "category": "expense",
       "description": "auto"
+    },
+    {
+      "id": "93b3",
+      "date": "2024-01-10",
+      "amount": 789.23,
+      "category": "income",
+      "description": "miscellaneous"
     }
   ]
 }
