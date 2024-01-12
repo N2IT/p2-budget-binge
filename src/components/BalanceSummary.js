@@ -1,4 +1,9 @@
 import { useState, useEffect } from 'react'
+import IncomeSummary from './IncomeSummary'
+import ExpenseSummary from './ExpenseSummary'
+import TotalSummary from './TotalSummary'
+
+
 function BalanceSummary() {
 
     const [transactions, setTransactions] = useState([])
@@ -14,17 +19,29 @@ function BalanceSummary() {
     //filter by category
     //sum filtered results
 
-    const incomes = transactions.filter((transaction) => {
-        if (transaction.category === "income") {
+    // INCOME SUMMARY //
+    // const incomes = transactions.filter((transaction) => {
+    //     if (transaction.category === "income") {
+    //         return transaction.amount
+    //     }
+    // })
+    // const incomeSum = incomes.map((income) => income.amount)
+    // const initial = 0;
+    // const incomeSumTotal = incomeSum.reduce(
+    //     (accumulator, currentValue) => accumulator + currentValue, initial);
+
+    // EXPENSE SUMMARY //
+    const initial = 0
+    const expenses = transactions.filter((transaction) => {
+        if (transaction.category === "expense") {
             return transaction.amount
         }
     })
-    const incomeSum=incomes.map((income) => income.amount)
-    const initial = 0;
-    const incomeSumTotal=incomeSum.reduce(
+    const expenseSum = expenses.map((expense) => expense.amount)
+    const expenseSumTotal = expenseSum.reduce(
         (accumulator, currentValue) => accumulator + currentValue, initial);
-    
-    console.log(incomeSumTotal)
+
+    console.log(expenseSumTotal)
 
     return (
         <>
@@ -32,17 +49,15 @@ function BalanceSummary() {
                 3/4 viewport dashboard
                 1/4 right side stock tickers */}
             <div className="dbBoxPrimary">
-                <div className="grid-container">
-                    <h1 className="dbIncome">TOTAL INCOME</h1>
-                    <h1 className="dbIncome-num">{incomeSumTotal}</h1>
-                </div>
+                <IncomeSummary transactions={transactions} />
+                
                 <div className="grid-container">
                     <h1 className="dbIncome">TOTAL EXPENSE</h1>
-                    <h1 className="dbIncome-num">$9,000</h1>
+                    <h1 className="dbIncome-num">{expenseSumTotal}</h1>
                 </div>
                 <div className="grid-container">
                     <h1 className="dbIncome">TOTAL BALANCE</h1>
-                    <h1 className="dbIncome-num">$3,000</h1>
+                    <h1 className="dbIncome-num">PlaceHolder</h1>
                 </div>
             </div>
 

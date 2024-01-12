@@ -27,6 +27,13 @@
             "date": "2024-1-24",
             "category": "expense",
             "description": "utilities"
+        },
+        {
+            "id": 5,
+            "amount": 3000,
+            "date": "2024-1-21",
+            "category": "income",
+            "description": "paycheck"
         }
     ]
 }

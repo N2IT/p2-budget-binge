@@ -14,7 +14,7 @@ function Home() {
         fetch('https://financialmodelingprep.com/api/v3/symbol/NASDAQ?apikey=zSPenQ3OxZC984T38yDveAGOwLjSQjtG')
             .then(r => r.json())
             .then(stocks => setStocks(stocks))
-            .then(isLoading => setIsLoading(false))
+            .then(() => setIsLoading(false))
             .catch(error => console.error(error))
     }, [])
 
