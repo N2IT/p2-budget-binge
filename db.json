@@ -1,18 +1,32 @@
 {
     "transactions": [
-       {
-           "id": 1,
-           "amount": 1000,
-           "date": "2024-1-1",
-           "category": "income",
-           "description": "miscellaneous income"
-       },
-       {
-           "id": 2,
-           "amount": 2000,
-           "date": "2024-1-7",
-           "category": "expense",
-           "description": "home"
-       }
-    ]   
-   }
+        {
+            "id": 1,
+            "amount": 1000,
+            "date": "2024-1-1",
+            "category": "income",
+            "description": "miscellaneous income"
+        },
+        {
+            "id": 2,
+            "amount": 2000,
+            "date": "2024-1-7",
+            "category": "expense",
+            "description": "home"
+        },
+        {
+            "id": 3,
+            "amount": 1500,
+            "date": "2024-1-19",
+            "category": "income",
+            "description": "paycheck"
+        },
+        {
+            "id": 4,
+            "amount": 2900,
+            "date": "2024-1-24",
+            "category": "expense",
+            "description": "utilities"
+        }
+    ]
+}

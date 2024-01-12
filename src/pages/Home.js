@@ -49,12 +49,6 @@ function Home() {
                         </div>
                     </div>
                 </div>
-
-                {/* Dashboard that will show summary of Total Income, Total Expense, Total Balance */}
-
-                {/* Sidebar that will show rendered stock tickers */}
-
-
             </main>
         </>
     );
