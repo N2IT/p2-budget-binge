@@ -52,13 +52,14 @@ function Transactions() {
                             <td>$2000</td>
                         </tr>
                     </tbody>
-                </table>
-                <table>
-                    <tr>
-                        <th>TOTAL SPEND: </th>
-                    </tr>
-                    <td>$11,700
-                    </td>
+                    <tfoot>
+                        <tr>
+                            <th>TOTAL SPEND: </th>
+                        </tr>
+                        <tr>
+                            <td>$11,700</td>
+                        </tr>
+                    </tfoot>
                 </table>
             </main>
         </>

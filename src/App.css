@@ -80,9 +80,10 @@ td {
   text-align: center;
 }
 
-table>td {
+tfoot td {
   font-size: 5vw;
   color: red;
+  text-align: center;
 }
 
 

@@ -1,12 +1,37 @@
 import { Outlet, useOutletContext } from "react-router-dom";
-import React from "react";
+import StockComponent from "../components/StockComponent";
+import React, { useState, useEffect } from "react";
 import '../App.css';
 
 function Home() {
 
+    const [ stocks, setStocks ] = useState([])
+
+    useEffect(() => {
+      fetch('https://financialmodelingprep.com/api/v3/symbol/NASDAQ?apikey=zSPenQ3OxZC984T38yDveAGOwLjSQjtG')
+      .then(r=>r.json())
+      .then(stocks=>setStocks(stocks))
+      .catch(error=>console.error(error))
+    }, [])
+
+    const stocksToDisplay=stocks.filter((stock) => {
+        if(stock.symbol === "AAPL"){
+           return stock.symbol && stock.price
+        } else if(stock.symbol === "META") {
+            return stock.symbol && stock.price
+        } else if(stock.symbol === "AMZN"){
+            return stock.symbol && stock.price
+        } else if(stock.symbol === 'NFLX'){
+            return stock.symbol && stock.price
+        } else if(stock.symbol === "GOOGL") {
+            return stock.symbol && stock.price
+        }
+    })
+
     return (
         <>
             <main>
+                {/* <Outlet context={stocks}/> */}
                 <h1>Dashboard / Balance</h1>
                 {/* Build container that will hold nested dashboard and stockticker items
                 3/4 viewport dashboard
@@ -27,13 +52,14 @@ function Home() {
                         </div>
                     </div>
                     <div className="dbTickerSideBar">
-                        <p>Insert Date Here</p>
+                        <StockComponent stock={stocksToDisplay} />
+                        {/* <p>Insert Date Here</p>
                         <h2>DOW JONES INDEX</h2>
                         <h4>$13,292</h4>
                         <h2>NASDAQ INDEX</h2>
                         <h4>$1,978</h4>
                         <h2>S&P INDEX</h2>
-                        <h4>$890.76</h4>
+                        <h4>$890.76</h4> */}
                     </div>
                     <div className="category-breakdown">
                         <h2>% Breakdown by Expense</h2>
