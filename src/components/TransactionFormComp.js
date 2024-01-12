@@ -1,20 +1,33 @@
 import { useState } from 'react'
 
-function TransactionForm() {
-
+function TransactionForm({ transaction }) {
+    const [ date, setDate ] = useState()
+    const [ amount, setAmount ] =useState(0)
+    const [ category, setCategory ] = useState("Income")
+    const [ description, setDescription ] = useState("Paycheck")
     const [ isIncome, setAsIncome ] = useState(true)
 
     const formData = {
-
+        date: date,
+        amount: parseFloat(amount),
+        category: category,
+        description: description
     }
 
-    function toggleDescription(){
+    function toggleDescription(e){
         setAsIncome((isIncome) => !isIncome)
+        setCategory(e)
     }
 
     function handleSubmit(e){
         e.preventDefault();
-        console.log(e.target.value)
+        fetch(`http://localhost:3000/transactions`, {
+            method: 'POST',
+            headers: {
+                'Content-Type':'json-application'
+            },
+            body: JSON.stringify(formData)
+        })
     }
 
     return (
@@ -22,25 +35,25 @@ function TransactionForm() {
                     <h1>Add Transactions Here</h1>
                     <form method="post" onSubmit={handleSubmit}>
                         <label htmlFor='Date'>Date </label>
-                        <input name="date" label="Date" type="date"></input>
+                        <input value={date} onChange={(e) => setDate(e.target.value)} name="date" label="Date" type="date"></input>
                         <br />
                         <label htmlFor='Amount'>Amount </label>
-                        <input name="amount" type="number" min="1" step="any"></input>
+                        <input value={amount} onChange={(e) => setAmount(e.target.value)} name="amount" type="number" min="1" step="any"></input>
                         <br />
                         <label htmlFor='Category'>Category </label>
-                        <select onChange={toggleDescription} name="category" id="category">
+                        <select value={category} onChange={(e) => toggleDescription(e.target.value)} name="category" id="category">
                             <option value="income">Income</option>
                             <option value="expense">Expense</option>
                         </select>
                         <br />
                         <label htmlFor='Description'>Description </label>
                         {isIncome ? 
-                            <select name="income description" id="income_description">
+                            <select value={description} onChange={(e) => setDescription(e.target.value)} name="income description" id="income_description">
                                 <option value="paycheck">Paycheck</option>
                                 <option value="miscellaneous">Miscellaneous</option>
                             </select> 
                             : 
-                            <select name="expense description" id="expense_description">
+                            <select value={description} onChange={(e) => setDescription(e.target.value)} name="expense description" id="expense_description">
                                 <option value="home">Home</option>
                                 <option value="utilities">Utilities</option>
                                 <option value="groceries">Groceries</option>

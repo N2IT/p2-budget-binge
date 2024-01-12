@@ -13,7 +13,7 @@ function App() {
     fetch('http://localhost:3000/transactions')
         .then(r => r.json())
         .then(transactions => setTransactions(transactions))
-}, [])
+}, [transactions])
   
   return (
     <>

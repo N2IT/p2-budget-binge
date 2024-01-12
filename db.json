@@ -1,39 +1,81 @@
 {
-    "transactions": [
-        {
-            "id": 1,
-            "amount": 1000.00,
-            "date": "2024-1-1",
-            "category": "income",
-            "description": "miscellaneous"
-        },
-        {
-            "id": 2,
-            "amount": 2000.24,
-            "date": "2024-1-7",
-            "category": "expense",
-            "description": "home"
-        },
-        {
-            "id": 3,
-            "amount": 1259.87,
-            "date": "2024-1-19",
-            "category": "income",
-            "description": "paycheck"
-        },
-        {
-            "id": 4,
-            "amount": 456.87,
-            "date": "2024-1-24",
-            "category": "expense",
-            "description": "utilities"
-        },
-        {
-            "id": 5,
-            "amount": 2998.77,
-            "date": "2024-1-21",
-            "category": "income",
-            "description": "paycheck"
-        }
-    ]
+  "transactions": [
+    {
+      "id": 1,
+      "amount": 1000,
+      "date": "2024-1-1",
+      "category": "income",
+      "description": "miscellaneous"
+    },
+    {
+      "id": 2,
+      "amount": 2000.24,
+      "date": "2024-1-7",
+      "category": "expense",
+      "description": "home"
+    },
+    {
+      "id": 3,
+      "amount": 1259.87,
+      "date": "2024-1-19",
+      "category": "income",
+      "description": "paycheck"
+    },
+    {
+      "id": 4,
+      "amount": 456.87,
+      "date": "2024-1-24",
+      "category": "expense",
+      "description": "utilities"
+    },
+    {
+      "id": 5,
+      "amount": 2998.77,
+      "date": "2024-1-21",
+      "category": "income",
+      "description": "paycheck"
+    },
+    {
+      "id": "39ed",
+      "date": "2024-01-22",
+      "amount": 876.22,
+      "category": "Income",
+      "description": "Paycheck"
+    },
+    {
+      "id": "1644",
+      "date": "2024-01-21",
+      "amount": 67.77,
+      "category": "expense",
+      "description": "groceries"
+    },
+    {
+      "id": "39f6",
+      "date": "2024-01-20",
+      "amount": 56.33,
+      "category": "expense",
+      "description": "entertainment"
+    },
+    {
+      "id": "24ac",
+      "date": "2024-01-27",
+      "amount": 89.54,
+      "category": "expense",
+      "description": "auto"
+    },
+    {
+      "id": "4217",
+      "date": "2024-01-24",
+      "amount": 6456.22,
+      "category": "expense",
+      "description": "other"
+    },
+    {
+      "id": "b182",
+      "date": "2024-01-15",
+      "amount": 369.88,
+      "category": "expense",
+      "description": "utilities"
+    }
+  ]
 }

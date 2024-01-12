@@ -1,13 +1,13 @@
 import StockComponent from "../components/StockComponent";
 import BalanceSummary from '../components/BalanceSummary';
 import CategorySummary from "../components/CategorySummary";
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect } from "react";
 import { Outlet, useOutletContext } from "react-router-dom";
 import '../App.css';
 
 function Home() {
 
-    const [ transactions, setTransactions ] = useOutletContext();
+    const [ transactions ] = useOutletContext();
 
     const [stocks, setStocks] = useState([])
     const [isLoading, setIsLoading] = useState(true)

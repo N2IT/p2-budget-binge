@@ -5,7 +5,6 @@ function TransactionComponent() {
     const transactions = useOutletContext();
 
     const transactionalData = transactions.map((transaction) => {
-        console.log(transaction.id)
         return (
             <tbody key={transaction.id}>
                 <tr>
