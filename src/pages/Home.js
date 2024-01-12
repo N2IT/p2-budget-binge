@@ -1,31 +1,33 @@
 import { Outlet, useOutletContext } from "react-router-dom";
 import StockComponent from "../components/StockComponent";
+import BalanceSummary from '../components/BalanceSummary';
+import CategorySummary from "../components/CategorySummary";
 import React, { useState, useEffect } from "react";
 import '../App.css';
 
 function Home() {
 
-    const [ stocks, setStocks ] = useState([])
-    const [ isLoading, setIsLoading ] = useState(true)
+    const [stocks, setStocks] = useState([])
+    const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
-      fetch('https://financialmodelingprep.com/api/v3/symbol/NASDAQ?apikey=zSPenQ3OxZC984T38yDveAGOwLjSQjtG')
-      .then(r=>r.json())
-      .then(stocks=>setStocks(stocks))
-      .then(isLoading => setIsLoading(false))
-      .catch(error=>console.error(error))
+        fetch('https://financialmodelingprep.com/api/v3/symbol/NASDAQ?apikey=zSPenQ3OxZC984T38yDveAGOwLjSQjtG')
+            .then(r => r.json())
+            .then(stocks => setStocks(stocks))
+            .then(isLoading => setIsLoading(false))
+            .catch(error => console.error(error))
     }, [])
 
-    const stocksToDisplay=stocks.filter((stock) => {
-        if(stock.symbol === "AAPL"){
-           return stock.symbol && stock.price
-        } else if(stock.symbol === "META") {
+    const stocksToDisplay = stocks.filter((stock) => {
+        if (stock.symbol === "AAPL") {
             return stock.symbol && stock.price
-        } else if(stock.symbol === "AMZN"){
+        } else if (stock.symbol === "META") {
             return stock.symbol && stock.price
-        } else if(stock.symbol === 'NFLX'){
+        } else if (stock.symbol === "AMZN") {
             return stock.symbol && stock.price
-        } else if(stock.symbol === "GOOGL") {
+        } else if (stock.symbol === 'NFLX') {
+            return stock.symbol && stock.price
+        } else if (stock.symbol === "GOOGL") {
             return stock.symbol && stock.price
         }
     })
@@ -35,42 +37,15 @@ function Home() {
             <main>
                 {/* <Outlet context={stocks}/> */}
                 <h1>Dashboard / Balance</h1>
-                {/* Build container that will hold nested dashboard and stockticker items
-                3/4 viewport dashboard
-                1/4 right side stock tickers */}
                 <div className="grid-container">
-                    <div className="dbBoxPrimary">
-                        <div className="grid-container">
-                            <h1 className="dbIncome">TOTAL INCOME</h1>
-                            <h1 className="dbIncome-num">$12,000</h1>
-                        </div>
-                        <div className="grid-container">
-                            <h1 className="dbIncome">TOTAL EXPENSE</h1>
-                            <h1 className="dbIncome-num">$9,000</h1>
-                        </div>
-                        <div className="grid-container">
-                            <h1 className="dbIncome">TOTAL BALANCE</h1>
-                            <h1 className="dbIncome-num">$3,000</h1>
-                        </div>
-                    </div>
+                    <BalanceSummary />
                     <div className="dbTickerSideBar">
-                        <StockComponent stocks={stocksToDisplay} loading={isLoading}/>
+                        <StockComponent stocks={stocksToDisplay} loading={isLoading} />
                     </div>
                     <div className="category-breakdown">
                         <h2>% Breakdown by Expense</h2>
                         <div className="grid-container">
-                            <h3 className="dbIncome">HOME</h3>
-                            <h3 className="dbIncome-num">30%</h3>
-                            <h3 className="dbIncome">AUTO</h3>
-                            <h3 className="dbIncome-num">10%</h3>
-                            <h3 className="dbIncome">UTILITIES</h3>
-                            <h3 className="dbIncome-num">20%</h3>
-                            <h3 className="dbIncome">GROCERIES</h3>
-                            <h3 className="dbIncome-num">15%</h3>
-                            <h3 className="dbIncome">ENTERTAINMENT</h3>
-                            <h3 className="dbIncome-num">10%</h3>
-                            <h3 className="dbIncome">OTHER</h3>
-                            <h3 className="dbIncome-num">15%</h3>
+                            <CategorySummary />
                         </div>
                     </div>
                 </div>
