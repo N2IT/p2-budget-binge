@@ -6,11 +6,13 @@ import '../App.css';
 function Home() {
 
     const [ stocks, setStocks ] = useState([])
+    const [ isLoading, setIsLoading ] = useState(true)
 
     useEffect(() => {
       fetch('https://financialmodelingprep.com/api/v3/symbol/NASDAQ?apikey=zSPenQ3OxZC984T38yDveAGOwLjSQjtG')
       .then(r=>r.json())
       .then(stocks=>setStocks(stocks))
+      .then(isLoading => setIsLoading(false))
       .catch(error=>console.error(error))
     }, [])
 
@@ -52,14 +54,7 @@ function Home() {
                         </div>
                     </div>
                     <div className="dbTickerSideBar">
-                        <StockComponent stock={stocksToDisplay} />
-                        {/* <p>Insert Date Here</p>
-                        <h2>DOW JONES INDEX</h2>
-                        <h4>$13,292</h4>
-                        <h2>NASDAQ INDEX</h2>
-                        <h4>$1,978</h4>
-                        <h2>S&P INDEX</h2>
-                        <h4>$890.76</h4> */}
+                        <StockComponent stocks={stocksToDisplay} loading={isLoading}/>
                     </div>
                     <div className="category-breakdown">
                         <h2>% Breakdown by Expense</h2>

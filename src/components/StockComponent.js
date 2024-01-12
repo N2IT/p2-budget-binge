@@ -1,13 +1,23 @@
+import React, { useState } from 'react'
 import { Link, useOutletContext } from 'react-router-dom'
 
-function StockComponent({ stock }) {
-    // const stocks = useOutletContext();
-    // console.log(stocks)
+function StockComponent({ stocks, loading }) {
+    
 
+    const faangStocks = stocks.map((stock) => {
+        return (
+            <div key={stock.symbol}>
+                <h2>{stock.symbol}</h2>
+                <h3>{stock.price}</h3>
+            </div>
+        )
+    })
 
     return (
         <>
-            <div>{stock}</div>
+            <div>
+                {loading ? <h2>Loading...</h2> : faangStocks}
+            </div>
         </>
     )
 }
