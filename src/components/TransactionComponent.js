@@ -5,13 +5,14 @@ function TransactionComponent() {
     const transactions = useOutletContext();
 
     const transactionalData = transactions.map((transaction) => {
+        console.log(transaction.id)
         return (
-            <tbody>
+            <tbody key={transaction.id}>
                 <tr>
                     <td>{transaction.date}</td>
                     <td>{transaction.category}</td>
                     <td>{transaction.description}</td>
-                    <td>{transaction.amount}</td>
+                    <td>${parseFloat(transaction.amount).toFixed(2)}</td>
                 </tr>
             </tbody>
         )
