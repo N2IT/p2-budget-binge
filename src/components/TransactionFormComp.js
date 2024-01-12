@@ -1,10 +1,12 @@
 import { useState } from 'react'
+import { useOutletContext } from 'react-router-dom'
 
-function TransactionForm({ transaction }) {
-    const [ date, setDate ] = useState()
+function TransactionForm() {
+    const transactions = useOutletContext()
+    const [ date, setDate ] = useState("")
     const [ amount, setAmount ] =useState(0)
-    const [ category, setCategory ] = useState("Income")
-    const [ description, setDescription ] = useState("Paycheck")
+    const [ category, setCategory ] = useState("income")
+    const [ description, setDescription ] = useState("paycheck")
     const [ isIncome, setAsIncome ] = useState(true)
 
     const formData = {
@@ -35,10 +37,10 @@ function TransactionForm({ transaction }) {
                     <h1>Add Transactions Here</h1>
                     <form method="post" onSubmit={handleSubmit}>
                         <label htmlFor='Date'>Date </label>
-                        <input value={date} onChange={(e) => setDate(e.target.value)} name="date" label="Date" type="date"></input>
+                        <input value={date} onChange={(e) => setDate(e.target.value)} name="date" label="Date" type="date" required></input>
                         <br />
                         <label htmlFor='Amount'>Amount </label>
-                        <input value={amount} onChange={(e) => setAmount(e.target.value)} name="amount" type="number" min="1" step="any"></input>
+                        <input value={amount} onChange={(e) => setAmount(e.target.value)} name="amount" type="number" min="1" step="any" required></input>
                         <br />
                         <label htmlFor='Category'>Category </label>
                         <select value={category} onChange={(e) => toggleDescription(e.target.value)} name="category" id="category">

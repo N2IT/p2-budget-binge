@@ -39,8 +39,8 @@
       "id": "39ed",
       "date": "2024-01-22",
       "amount": 876.22,
-      "category": "Income",
-      "description": "Paycheck"
+      "category": "income",
+      "description": "paycheck"
     },
     {
       "id": "1644",
@@ -76,6 +76,20 @@
       "amount": 369.88,
       "category": "expense",
       "description": "utilities"
+    },
+    {
+      "id": "1675",
+      "date": "2024-01-19",
+      "amount": 9988.33,
+      "category": "income",
+      "description": "miscellaneous"
+    },
+    {
+      "id": "3fdb",
+      "date": "2024-01-04",
+      "amount": 899.44,
+      "category": "expense",
+      "description": "auto"
     }
   ]
 }
