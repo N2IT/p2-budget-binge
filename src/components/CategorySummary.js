@@ -1,5 +1,8 @@
+import { useOutletContext } from "react-router-dom";
 
-function CategorySummary({ transactions, initial }) {
+function CategorySummary({ initial }) {
+
+    const transactions = useOutletContext()
     //filter transactions db by expenses ✔️
     //filter expenses by descriptions
     //sumTotal filtered expenses by description key

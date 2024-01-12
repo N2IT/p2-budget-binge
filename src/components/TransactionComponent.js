@@ -1,6 +1,11 @@
+import { useOutletContext } from "react-router-dom"
 
 
 function TransactionComponent() {
+
+    const transactions = useOutletContext();
+
+    console.log(transactions)
 
     return (
         <>

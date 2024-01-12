@@ -1,14 +1,16 @@
 import StockComponent from "../components/StockComponent";
 import BalanceSummary from '../components/BalanceSummary';
 import CategorySummary from "../components/CategorySummary";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { Outlet, useOutletContext } from "react-router-dom";
 import '../App.css';
 
 function Home() {
 
+    const [ transactions, setTransactions ] = useOutletContext();
+
     const [stocks, setStocks] = useState([])
     const [isLoading, setIsLoading] = useState(true)
-    const [transactions, setTransactions] = useState([])
     const initial = 0
 
     //FETCH STOCK API
@@ -34,30 +36,23 @@ function Home() {
         }
     })
 
-    
-    //FETCH TRANSACTION DB
-    useEffect(() => {
-        fetch('http://localhost:3000/transactions')
-            .then(r => r.json())
-            .then(transactions => setTransactions(transactions))
-    }, [])
-
     return (
         <>
             <main>
                 <h1>Dashboard / Balance</h1>
                 <div className="grid-container">
-                    <BalanceSummary transactions={transactions} setTransactions={setTransactions} initial={initial}/>
+                    <BalanceSummary initial={initial}/>
                     <div className="dbTickerSideBar">
                         <StockComponent stocks={stocksToDisplay} loading={isLoading} />
                     </div>
                     <div className="category-breakdown">
                         <h2>% Breakdown by Expense</h2>
                         <div className="grid-container">
-                            <CategorySummary transactions={transactions} initial={initial} />
+                            <CategorySummary initial={initial} />
                         </div>
                     </div>
                 </div>
+                <Outlet context={transactions} />
             </main>
         </>
     );
