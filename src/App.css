@@ -76,8 +76,10 @@ th {
 }
 
 td {
-  font-size: 2.5vw;
+  font-size: calc(5px + 2vmin);
   text-align: center;
+  overflow-x: hidden;
+  white-space: nowrap;
 }
 
 tfoot td {

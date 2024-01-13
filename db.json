@@ -97,6 +97,27 @@
       "amount": 789.23,
       "category": "income",
       "description": "miscellaneous"
+    },
+    {
+      "id": "3825",
+      "date": "2024-01-15",
+      "amount": 787.87,
+      "category": "expense",
+      "description": "auto"
+    },
+    {
+      "id": "39cc",
+      "date": "2024-01-16",
+      "amount": 10000,
+      "category": "income",
+      "description": "miscellaneous"
+    },
+    {
+      "id": "533b",
+      "date": "2024-01-18",
+      "amount": 34.22,
+      "category": "expense",
+      "description": "groceries"
     }
   ]
 }

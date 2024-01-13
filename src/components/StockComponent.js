@@ -7,7 +7,7 @@ function StockComponent({ stocks, loading }) {
         return (
             <div key={stock.symbol}>
                 <h2>{stock.symbol}</h2>
-                <h3>${parseFloat(stock.price).toFixed(2)}</h3>
+                <h3>${parseFloat(stock.price).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</h3>
             </div>
         )
     })
