@@ -2,11 +2,19 @@ import { useOutletContext } from "react-router-dom"
 
 
 function TransactionComponent() {
-    const transactions = useOutletContext();
+    const [ transactions, onDeleteItem ] = useOutletContext();
 
-    function handleDelete(e) {
-        console.log(e)
+    function handleDelete(deletedLine) {
+        fetch(`http://localhost:3000/transactions/${deletedLine.id}`, {
+            method: 'DELETE'
+        })
+        .then(r => r.json()) 
+        .then(() => onDeleteItem(deletedLine))
+        .catch(error => {
+            console.error('Error during deletion:', error);
+        });
     }
+    
 
     const transactionalData = transactions.map((transaction) => {
         return (
@@ -15,7 +23,8 @@ function TransactionComponent() {
                     <td>{transaction.date}</td>
                     <td>{transaction.category}</td>
                     <td>{transaction.description}</td>
-                    <td>${parseFloat(transaction.amount).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}&nbsp;<span title="edit" > ✏️ </span>&nbsp;<span title="delete" onClick={() => handleDelete(transaction.id)}> ❌ </span></td>
+                    <td>${parseFloat(transaction.amount).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</td>
+                    <td>{transaction.notes}&nbsp;<span title="delete" onClick={() => handleDelete(transaction)}> ❌ </span></td>
                 </tr>
             </tbody>
         )
@@ -30,6 +39,7 @@ function TransactionComponent() {
                         <th>CATEGORY</th>
                         <th>DESCRIPTION</th>
                         <th>AMOUNT</th>
+                        <th>NOTES</th>
                     </tr>
                 </thead>
                 {transactionalData}

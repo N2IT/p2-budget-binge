@@ -3,7 +3,7 @@ import TransactionComponent from "../components/TransactionComponent"
 import { Outlet, useOutletContext } from 'react-router-dom'
 
 function Transactions() {
-    const transactions = useOutletContext();
+    const [transactions] = useOutletContext();
 
     return (
         <>

@@ -11,7 +11,7 @@ function Navbar() {
             >Home
             </NavLink>
             <NavLink
-                to="/transactions"
+                to="/transaction-list"
                 className="nav-link"
             >Transactions
             </NavLink>

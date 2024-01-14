@@ -15,7 +15,7 @@ const routes = [
         element: <Home />
       },
       {
-        path: '/transactions',
+        path: '/transaction-list',
         element: <Transactions />,
       },
       {

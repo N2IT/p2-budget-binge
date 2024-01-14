@@ -1,9 +1,9 @@
 import { useOutletContext } from "react-router-dom"
 
 
-function BalanceSummary({ initial}) {
+function BalanceSummary({ initial }) {
 
-    const transactions = useOutletContext();
+    const [transactions] = useOutletContext();
     //fetch db 
     //filter by category
     //sum filtered results

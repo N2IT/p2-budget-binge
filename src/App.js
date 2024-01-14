@@ -6,21 +6,27 @@ import './AppMobile.css';
 
 function App() {
 
-  const [ transactions, setTransactions ] = useState([])
+  const [transactions, setTransactions] = useState([])
 
-   //FETCH TRANSACTION DB
-   useEffect(() => {
+  //FETCH TRANSACTION DB
+  useEffect(() => {
     fetch('http://localhost:3000/transactions')
-        .then(r => r.json())
-        .then(transactions => setTransactions(transactions))
-}, [transactions])
-  
+      .then(r => r.json())
+      .then(transactions => setTransactions(transactions))
+  }, [ transactions ])
+
+  function onDeleteItem(deletedItem){
+    const updatedTransactions = transactions.filter((transaction) => transaction.id !== deletedItem.id)
+    setTransactions(updatedTransactions)
+  }
+
+
   return (
     <>
       <div class="App-header">
         <NavBar />
       </div>
-      <Outlet context={transactions}/>
+      <Outlet context={[transactions, onDeleteItem]} />
     </>
   );
 }

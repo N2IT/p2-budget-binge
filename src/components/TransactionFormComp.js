@@ -1,24 +1,24 @@
 import { useState } from 'react'
-import { useOutletContext } from 'react-router-dom'
 
 function TransactionForm() {
-    const transactions = useOutletContext()
     const [date, setDate] = useState("")
     const [amount, setAmount] = useState(0)
     const [category, setCategory] = useState("income")
     const [description, setDescription] = useState("paycheck")
     const [isIncome, setAsIncome] = useState(true)
     const [form, setAsForm] = useState(true)
+    const [notes, setNotes] = useState("")
 
     const formData = {
         date: date,
         amount: parseFloat(amount),
         category: category,
-        description: description
+        description: description,
+        notes: notes
     }
 
-    function toggleDescription(e) {
-        setAsIncome((isIncome) => !isIncome)
+    function toggleCategory(e) {
+        setAsIncome((income) => !income)
         setCategory(e)
     }
 
@@ -32,10 +32,17 @@ function TransactionForm() {
             body: JSON.stringify(formData)
         })
         toggleForm()
+        setAmount(0)
+        setNotes("")
+        setDate("")
     }
 
     function toggleForm() {
         setAsForm((form) => !form)
+    }
+
+    function windowRefresh(){
+        window.location.reload(false)
     }
 
     const formBody = <form method="post" onSubmit={handleSubmit}>
@@ -46,7 +53,7 @@ function TransactionForm() {
         <input value={amount} onChange={(e) => setAmount(e.target.value)} name="amount" type="number" min="1" step="any" required></input>
         <br />
         <label htmlFor='Category'>Category </label>
-        <select value={category} onChange={(e) => toggleDescription(e.target.value)} name="category" id="category">
+        <select value={category} onChange={(e) => toggleCategory(e.target.value)} name="category" id="category">
             <option value="income">Income</option>
             <option value="expense">Expense</option>
         </select>
@@ -67,14 +74,17 @@ function TransactionForm() {
                 <option value="other">Other</option>
             </select>}
         <br />
-        {date && amount ? <button class="button" type="submit">Send It</button> : null }
-        
+        <label htmlFor='Notes'>Notes </label>
+        <input value={notes} onChange={(e) => setNotes(e.target.value)} name="notes" id="notes"></input>
+        <br />
+        {date && amount ? <button class="button" type="submit">Send It</button> : null}
+
     </form>
 
     return (
         <div class="add-transactions-form">
             <h1>Add Transactions Here</h1>
-            {form ? formBody : <h2>Thank you for your submission</h2>}
+            {form ? formBody : <><h2>Transaction Added</h2><br /><button onClick={windowRefresh} className="button">Add another</button></>}
 
         </div>
 
