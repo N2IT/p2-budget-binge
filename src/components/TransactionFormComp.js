@@ -45,7 +45,7 @@ function TransactionForm() {
         window.location.reload(false)
     }
 
-    const formBody = <form method="post" onSubmit={handleSubmit}>
+    const formBody = <form className="formStyle" method="post" onSubmit={handleSubmit}>
         <label htmlFor='Date'>Date </label>
         <input value={date} onChange={(e) => setDate(e.target.value)} name="date" label="Date" type="date" required></input>
         <br />

@@ -47,6 +47,22 @@
       "category": "expense",
       "description": "entertainment",
       "notes": "Movies"
+    },
+    {
+      "id": "f5aa",
+      "date": "2024-01-18",
+      "amount": 766.22,
+      "category": "expense",
+      "description": "home",
+      "notes": "rent"
+    },
+    {
+      "id": "1c61",
+      "date": "2024-01-02",
+      "amount": 368.77,
+      "category": "expense",
+      "description": "auto",
+      "notes": "honda"
     }
   ]
 }
