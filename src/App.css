@@ -122,6 +122,10 @@ h3 {
   overflow-x: auto;
 }
 
+/* .justified {
+  text-align: right;
+} */
+
 th {
   font-size: calc(10px + 2vmin);
   width: 1%;

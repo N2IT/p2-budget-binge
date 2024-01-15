@@ -24,7 +24,8 @@ function TransactionComponent() {
                     <td>{transaction.category}</td>
                     <td>{transaction.description}</td>
                     <td>${parseFloat(transaction.amount).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</td>
-                    <td>{transaction.notes}&nbsp;<span title="delete" onClick={() => handleDelete(transaction)}> ❌ </span></td>
+                    <td>{transaction.notes}</td>
+                    <td><button title="delete" onClick={() => handleDelete(transaction)}> ❌ </button></td>
                 </tr>
             </tbody>
         )
@@ -40,6 +41,7 @@ function TransactionComponent() {
                         <th>DESCRIPTION</th>
                         <th>AMOUNT</th>
                         <th>NOTES</th>
+                        <th>DELETE</th>
                     </tr>
                 </thead>
                 {transactionalData}

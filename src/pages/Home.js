@@ -47,7 +47,6 @@ function Home() {
                     <div className="dbTickerSideBar">
                     <div class="refresh-date">{`Current Date / Time: ${timeStamp}`}</div>
                         <div className="stock-box">
-                            
                             <StockComponent stocks={stocksToDisplay} loading={isLoading} />
                         </div>
                     </div>
