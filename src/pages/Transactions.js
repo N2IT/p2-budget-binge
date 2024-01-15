@@ -9,7 +9,9 @@ function Transactions() {
         <>
             <main>
                 <h1>Where did all the money go?</h1>
-                <TransactionComponent />
+                <div className="table-flow">
+                    <TransactionComponent />
+                </div>
             </main>
             <Outlet context={transactions} />
         </>

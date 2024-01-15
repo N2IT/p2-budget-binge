@@ -37,41 +37,93 @@
   }
 }
 
+h1 {
+  font-size: calc(12px + 2vmin);
+}
+
+h2 {
+  font-size: calc(10px + 2vmin);
+}
+
+h3 {
+  font-size: calc(8px + 2vmin);
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   padding: 2% 5%;
-  background-color: rgb(219, 219, 219);
+  background-color: none;
 
 }
+
+.stock-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.stock-listing {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 3%;
+}
+
+.stock-name, .stock-price {
+  font-size: calc(7px + 2vmin);
+}
+
+.refresh-date {
+  font-size: calc(.25px + 2vmin);
+}
+
 
 /**************************** HOME page ****************************/
 .dbBoxPrimary,
 .dbIncome {
   grid-column: 1/9;
-  background-color: rgb(209, 250, 255);
-  border: 1px solid red;
+  background-color: #0a875433;
+  border: 1px solid #666666;
+  border-radius: 5px;
+}
+
+.dbBoxPrimary .dbIncome {
+  background-color: white;
 }
 
 .dbTickerSideBar,
 .dbIncome-num {
   grid-column: 9/13;
-  border: 1px solid blue;
-  background-color: rgb(255, 214, 167);
+  text-decoration: none;
+  background-color: white;
+  border: 1px solid #666;
+  border-radius: 8px;
+  text-align: center;
 }
 
 .category-breakdown {
   grid-column: 1/13;
-  border: 1px solid black;
-  background-color: aqua;
+  border: 1px solid #666;
+  background-color: #BFD7EA;
+  border-radius: 8px;
 }
+
+.category-breakdown .dbIncome,
+.category-breakdown .dbIncome-num {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+} 
 
 
 /**************************** Transactions page ************************/
+.table-flow {
+  overflow-x: auto;
+}
+
 th {
-  font-size: 3vw;
+  font-size: calc(10px + 2vmin);
   width: 1%;
 }
 

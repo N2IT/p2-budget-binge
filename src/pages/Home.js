@@ -7,7 +7,7 @@ import '../App.css';
 
 function Home() {
 
-    const [ transactions ] = useOutletContext();
+    const [transactions] = useOutletContext();
 
     const [stocks, setStocks] = useState([])
     const [isLoading, setIsLoading] = useState(true)
@@ -36,14 +36,20 @@ function Home() {
         }
     })
 
+    const timeStamp = new Date();
+
     return (
         <>
             <main>
                 <h1>Dashboard / Balance</h1>
                 <div className="grid-container">
-                    <BalanceSummary initial={initial}/>
+                    <BalanceSummary initial={initial} />
                     <div className="dbTickerSideBar">
-                        <StockComponent stocks={stocksToDisplay} loading={isLoading} />
+                    <div class="refresh-date">{`Current Date / Time: ${timeStamp}`}</div>
+                        <div className="stock-box">
+                            
+                            <StockComponent stocks={stocksToDisplay} loading={isLoading} />
+                        </div>
                     </div>
                     <div className="category-breakdown">
                         <h2>% Breakdown by Expense</h2>
