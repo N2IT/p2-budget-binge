@@ -16,16 +16,56 @@
   .dbBoxPrimary,
   .dbIncome {
       grid-column: 1/13;
-      background-color: grey;
-      border: 1px solid red;
+      background-color: #0a875433;
+      border: 1px solid #666666;
+      border-radius: 5px;
+      text-align: center;
     }
     
     .dbTickerSideBar,
     .dbIncome-num {
       grid-column: 1/13;
-      border: 1px solid rgb(255, 0, 43);
-      background-color: aliceblue;
+      text-decoration: none;
+      background-color: white;
+      border: 1px solid #666;
+      border-radius: 8px;
+      text-align: center;
     }
+
+    .recent-transactions {
+      grid-row: 3;
+      grid-column: 1/13;
+      border: 1px solid #666;
+      background-color: #508CA4;
+      border-radius: 8px;
+      overflow-y: auto;
+      overflow-x: auto;
+      height: calc(50vh - 10px);
+    }
+    
+    .recent-transactions table th {
+      font-size: calc(5px + 2vmin);
+    }
+
+    .category-breakdown {
+      grid-column: 1/13;
+      border: 1px solid #666;
+      background-color: #BFD7EA;
+      border-radius: 8px;
+      
+    }
+
+    .dbIncome {
+      grid-column: 1/7;
+      margin: 0;
+      padding: 0;
+    }
+    .dbIncome-num {
+      grid-column: 7/13;
+      background-color: white;
+      margin: 0;
+      padding: 0;
+} 
     
   }
   

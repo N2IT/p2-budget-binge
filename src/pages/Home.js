@@ -4,6 +4,7 @@ import CategorySummary from "../components/CategorySummary";
 import React, { useState, useEffect } from "react";
 import { Outlet, useOutletContext } from "react-router-dom";
 import '../App.css';
+import RecentTransactions from "../components/RecentTransactions";
 
 function Home() {
 
@@ -45,10 +46,17 @@ function Home() {
                 <div className="grid-container">
                     <BalanceSummary initial={initial} />
                     <div className="dbTickerSideBar">
-                    <div class="refresh-date">{`Current Date / Time: ${timeStamp}`}</div>
+                        <div class="refresh-date">{`Current Date / Time: ${timeStamp}`}</div>
                         <div className="stock-box">
                             <StockComponent stocks={stocksToDisplay} loading={isLoading} />
                         </div>
+                    </div>
+                    <div className="recent-transactions">
+                        <h2>Recent Transactions</h2>
+                        <RecentTransactions />
+                        {/* <div className="grid-container">
+                            
+                        </div> */}
                     </div>
                     <div className="category-breakdown">
                         <h2>% Breakdown by Expense</h2>

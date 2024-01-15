@@ -1,148 +1,52 @@
 {
   "transactions": [
     {
-      "id": "2d5d",
-      "date": "2024-01-19",
-      "amount": 2000.22,
-      "category": "expense",
-      "description": "home",
-      "notes": "Mortgage"
-    },
-    {
-      "id": "f9d2",
-      "date": "2024-01-18",
-      "amount": 1990.22,
-      "category": "income",
-      "description": "paycheck",
-      "notes": "payment"
-    },
-    {
-      "id": "35d4",
-      "date": "2024-01-05",
-      "amount": 23.22,
-      "category": "expense",
-      "description": "groceries",
-      "notes": "icecream"
-    },
-    {
-      "id": "3fb8",
-      "date": "2024-01-09",
-      "amount": 3000,
-      "category": "expense",
-      "description": "home",
-      "notes": "mortgage"
-    },
-    {
-      "id": "ad9c",
-      "date": "2024-01-10",
-      "amount": 233.22,
-      "category": "income",
-      "description": "miscellaneous",
-      "notes": "freelance"
-    },
-    {
-      "id": "e38a",
-      "date": "2024-01-25",
-      "amount": 299.99,
-      "category": "expense",
-      "description": "auto",
-      "notes": "subaru"
-    },
-    {
-      "id": "334a",
-      "date": "2024-01-18",
-      "amount": 122.22,
-      "category": "expense",
-      "description": "auto",
-      "notes": "honda"
-    },
-    {
-      "id": "4515",
-      "date": "2024-01-09",
-      "amount": 222.22,
-      "category": "income",
-      "description": "miscellaneous",
-      "notes": "freelance"
-    },
-    {
-      "id": "6be3",
+      "id": "7478",
       "date": "2024-01-15",
-      "amount": 899.23,
+      "amount": 12335.05,
       "category": "income",
       "description": "miscellaneous",
-      "notes": "freelance"
+      "notes": "Balance"
     },
     {
-      "id": "b4bc",
-      "date": "2024-01-11",
-      "amount": 33.45,
-      "category": "expense",
-      "description": "groceries",
-      "notes": "potato chips"
-    },
-    {
-      "id": "a5f2",
+      "id": "b8d3",
       "date": "2024-01-17",
-      "amount": 334.22,
+      "amount": 70,
       "category": "expense",
       "description": "utilities",
-      "notes": "gas"
+      "notes": "CentLink"
     },
     {
-      "id": "6246",
-      "date": "2024-01-10",
-      "amount": 234.56,
-      "category": "expense",
-      "description": "utilities",
-      "notes": "Seattle LIght"
-    },
-    {
-      "id": "ea43",
-      "date": "2024-01-04",
-      "amount": 333.2,
-      "category": "income",
-      "description": "paycheck",
-      "notes": "reainier"
-    },
-    {
-      "id": "49a9",
-      "date": "2024-01-19",
-      "amount": 900,
-      "category": "expense",
-      "description": "paycheck",
-      "notes": "was paycheck"
-    },
-    {
-      "id": "efc4",
-      "date": "2024-01-11",
-      "amount": 22.44,
-      "category": "income",
-      "description": "miscellaneous",
-      "notes": "freelance"
-    },
-    {
-      "id": "2eac",
-      "date": "2024-01-18",
-      "amount": 23.23,
+      "id": "d2aa",
+      "date": "2024-01-30",
+      "amount": 42,
       "category": "expense",
       "description": "other",
-      "notes": "stuff"
+      "notes": "KEXP / Donation"
     },
     {
-      "id": "776e",
-      "date": "2024-01-25",
-      "amount": 3000.12,
+      "id": "c3a4",
+      "date": "2024-01-31",
+      "amount": 14.32,
       "category": "expense",
-      "description": "home",
-      "notes": "mortgage"
+      "description": "utilities",
+      "notes": "Arlo Security"
     },
     {
-      "id": "54d8",
-      "date": "2024-01-17",
-      "amount": 9009.11,
-      "category": "income",
-      "description": "paycheck",
-      "notes": "my shiz"
+      "id": "e449",
+      "date": "2024-01-19",
+      "amount": 400,
+      "category": "expense",
+      "description": "groceries",
+      "notes": "Amazon Delivery"
+    },
+    {
+      "id": "c6ca",
+      "date": "2024-01-13",
+      "amount": 45.87,
+      "category": "expense",
+      "description": "entertainment",
+      "notes": "Movies"
     }
   ]
 }

@@ -25,42 +25,42 @@ function CategorySummary({ initial }) {
     const homeSumTotal = homeExpense.map((paid) => paid.amount)
     const homeExpenseSumTotal = homeSumTotal.reduce(
         (accumulator, currentValue) => accumulator + currentValue, initial);
-    const homePercentage = `${parseFloat(homeExpenseSumTotal / expenseSumTotal).toFixed(2) * 100}%`
+    const homePercentage = `${(parseFloat(homeExpenseSumTotal / expenseSumTotal)* 100).toFixed(1) }%`
 
     //AUTO EXPENSES
     const autoExpense = expenses.filter((expense) => expense.description === "auto")
     const autoSumTotal = autoExpense.map((paid) => paid.amount)
     const autoExpenseSumTotal = autoSumTotal.reduce(
         (accumulator, currentValue) => accumulator + currentValue, initial);
-    const autoPercentage = `${parseFloat(autoExpenseSumTotal / expenseSumTotal).toFixed(2) * 100}%`
+    const autoPercentage = `${(parseFloat(autoExpenseSumTotal / expenseSumTotal) * 100).toFixed(1)}%`
 
     //UTILITIES EXPENSES
     const utilityExpense = expenses.filter((expense) => expense.description === "utilities")
     const utilitySumTotal = utilityExpense.map((paid) => paid.amount)
     const utilityExpenseSumTotal = utilitySumTotal.reduce(
         (accumulator, currentValue) => accumulator + currentValue, initial);
-    const utilityPercentage = `${parseFloat(utilityExpenseSumTotal / expenseSumTotal).toFixed(2) * 100}%`
+    const utilityPercentage = `${(parseFloat(utilityExpenseSumTotal / expenseSumTotal)* 100).toFixed(1)}%`
 
     //GROCERIES EXPENSES
     const groceryExpense = expenses.filter((expense) => expense.description === "groceries")
     const grocerySumTotal = groceryExpense.map((paid) => paid.amount)
     const groceryExpenseSumTotal = grocerySumTotal.reduce(
         (accumulator, currentValue) => accumulator + currentValue, initial);
-    const groceryPercentage = `${parseFloat(groceryExpenseSumTotal / expenseSumTotal).toFixed(2) * 100}%`
+    const groceryPercentage = `${(parseFloat(groceryExpenseSumTotal / expenseSumTotal)* 100).toFixed(1)}%`
 
     //ENTERTAINMENT EXPENSES
     const entExpense = expenses.filter((expense) => expense.description === "entertainment")
     const entSumTotal = entExpense.map((paid) => paid.amount)
     const entExpenseSumTotal = entSumTotal.reduce(
         (accumulator, currentValue) => accumulator + currentValue, initial);
-    const entPercentage = `${parseFloat(entExpenseSumTotal / expenseSumTotal).toFixed(2) * 100}%`
+    const entPercentage = `${(parseFloat(entExpenseSumTotal / expenseSumTotal)* 100).toFixed(1)}%`
 
     //OTHER EXPENSES
     const otherExpense = expenses.filter((expense) => expense.description === "other")
     const otherSumTotal = otherExpense.map((paid) => paid.amount)
     const otherExpenseSumTotal = otherSumTotal.reduce(
         (accumulator, currentValue) => accumulator + currentValue, initial);
-    const otherPercentage = `${parseFloat(otherExpenseSumTotal / expenseSumTotal).toFixed(2) * 100}%`
+    const otherPercentage = `${(parseFloat(otherExpenseSumTotal / expenseSumTotal)* 100).toFixed(1) }%`
 
 
     return (

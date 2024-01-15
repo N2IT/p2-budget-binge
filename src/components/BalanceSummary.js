@@ -33,15 +33,15 @@ function BalanceSummary({ initial }) {
         <>
             <div className="dbBoxPrimary">
                 <div className="grid-container">
-                    <h1 className="dbIncome">TOTAL INCOME</h1>
+                    <h1 className="dbIncome">Total Reported Income</h1>
                     <h1 className="dbIncome-num">${parseFloat(incomeSumTotal).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</h1>
                 </div>
                 <div className="grid-container">
-                    <h1 className="dbIncome">TOTAL EXPENSE</h1>
+                    <h1 className="dbIncome">Total Reported Expense</h1>
                     <h1 className="dbIncome-num">${parseFloat(expenseSumTotal).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</h1>
                 </div>
                 <div className="grid-container">
-                <h1 className="dbIncome">TOTAL BALANCE</h1>
+                <h1 className="dbIncome">Total Balance</h1>
                 <h1 className="dbIncome-num">${parseFloat(incomeSumTotal - expenseSumTotal).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</h1>
             </div>
             </div>
