@@ -63,6 +63,38 @@
       "category": "expense",
       "description": "auto",
       "notes": "honda"
+    },
+    {
+      "id": "c7c6",
+      "date": "2024-01-17",
+      "amount": 23.34,
+      "category": "expense",
+      "description": "groceries",
+      "notes": "icecream"
+    },
+    {
+      "id": "54ff",
+      "date": "2024-01-05",
+      "amount": 72.22,
+      "category": "expense",
+      "description": "utilities",
+      "notes": "gas bill"
+    },
+    {
+      "id": "9c27",
+      "date": "2024-01-03",
+      "amount": 60,
+      "category": "expense",
+      "description": "utilities",
+      "notes": "internet"
+    },
+    {
+      "id": "613e",
+      "date": "2024-01-19",
+      "amount": 22.87,
+      "category": "income",
+      "description": "miscellaneous",
+      "notes": "paid back by friend"
     }
   ]
 }

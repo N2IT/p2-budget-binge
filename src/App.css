@@ -3,8 +3,12 @@
 }
 
 .App-logo {
-  height: 10vmin;
+  height: 6vmin;
   pointer-events: none;
+}
+
+.title-bar {
+  padding: 1% 0;
 }
 
 /* @media (prefers-reduced-motion: no-preference) {
@@ -12,6 +16,13 @@
     animation: App-logo-spin infinite 20s linear;
   }
 } */
+
+.test {
+  font-family: "Bombing";
+  font-size: calc(25px + 5vmin);
+  color: #03e9f4;
+  letter-spacing: 12px;
+}
 
 .App-header {
   background-color: #282c34;
@@ -67,7 +78,11 @@ h3 {
 .stock-listing {
   display: inline-flex;
   flex-wrap: wrap;
-  padding: 3%;
+  padding: 0 3%;
+  margin: 2%;
+  border: 2px solid;
+  border-radius: 5px;
+  background-color: #0a875433;
 }
 
 .stock-name, .stock-price {
@@ -221,9 +236,13 @@ select {
 }
 
 .button:hover {
-  background-color: white;
-  color: #282C34;
-  border: 1px solid #282C34;
+  background-color: #508CA4;
+  color: white;
+  border: none;
+  box-shadow: 0 0 5px #508CA4,
+              0 0 25px #508CA4,
+              0 0 50px #508CA4,
+              0 0 100px #508CA4;
 }
 
 .formStyle {
