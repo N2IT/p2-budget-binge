@@ -1,108 +1,68 @@
 {
   "transactions": [
     {
-      "id": "4272",
-      "date": "2024-01-19",
-      "amount": 2223.22,
+      "id": "1bb1",
+      "date": "2024-01-01",
+      "amount": 3500,
       "category": "income",
-      "description": "paycheck",
-      "notes": "rainier"
+      "description": "miscellaneous",
+      "notes": "Balance"
     },
     {
-      "id": "7933",
-      "date": "2024-01-19",
-      "amount": 23.23,
-      "category": "income",
-      "description": "paycheck",
-      "notes": "income paycheck no touch desc"
-    },
-    {
-      "id": "fdec",
-      "date": "2024-01-26",
-      "amount": 387.22,
+      "id": "da6a",
+      "date": "2024-01-03",
+      "amount": 2500,
       "category": "expense",
       "description": "home",
-      "notes": "expense home no touch desc"
+      "notes": "mortgage / rent"
     },
     {
-      "id": "7994",
-      "date": "2024-01-16",
-      "amount": 2.33,
-      "category": "expense",
-      "description": "other",
-      "notes": "expense other no touch category"
-    },
-    {
-      "id": "a128",
-      "date": "2024-01-19",
-      "amount": 3344.33,
-      "category": "expense",
-      "description": "other",
-      "notes": "expense other no touch category"
-    },
-    {
-      "id": "624f",
-      "date": "2024-01-25",
-      "amount": 455.33,
-      "category": "income",
-      "description": "miscellaneous",
-      "notes": "freelance work payment"
-    },
-    {
-      "id": "6a80",
-      "date": "2024-01-26",
-      "amount": 343.22,
-      "category": "income",
-      "description": "miscellaneous",
-      "notes": "income misc no touch desc"
-    },
-    {
-      "id": "98e1",
-      "date": "2024-01-26",
-      "amount": 45.56,
-      "category": "expense",
-      "description": "entertainment",
-      "notes": "movie"
-    },
-    {
-      "id": "aa92",
-      "date": "2024-01-26",
-      "amount": 23.22,
-      "category": "expense",
-      "description": "entertainment",
-      "notes": "expense enter no touch desc"
-    },
-    {
-      "id": "805e",
-      "date": "2024-01-25",
-      "amount": 90,
+      "id": "bd55",
+      "date": "2024-01-05",
+      "amount": 200,
       "category": "expense",
       "description": "groceries",
-      "notes": "QFC"
+      "notes": "amazon fresh"
     },
     {
-      "id": "3020",
-      "date": "2024-02-02",
-      "amount": 9898,
+      "id": "ce18",
+      "date": "2024-01-08",
+      "amount": 700,
       "category": "income",
-      "description": "paycheck",
-      "notes": "big time"
+      "description": "miscellaneous",
+      "notes": "freelance payment"
     },
     {
-      "id": "169d",
-      "date": "2024-01-27",
-      "amount": 23.22,
+      "id": "f820",
+      "date": "2024-01-18",
+      "amount": 450,
       "category": "expense",
-      "description": "groceries",
-      "notes": "icecream"
+      "description": "auto",
+      "notes": "honda"
     },
     {
-      "id": "b720",
-      "date": "2024-01-24",
-      "amount": 3433.22,
-      "category": "income",
-      "description": "paycheck",
-      "notes": "jan payment"
+      "id": "3ac6",
+      "date": "2024-01-26",
+      "amount": 350,
+      "category": "expense",
+      "description": "utilities",
+      "notes": "water / waste"
+    },
+    {
+      "id": "cde6",
+      "date": "2024-01-31",
+      "amount": 40,
+      "category": "expense",
+      "description": "other",
+      "notes": "Donation"
+    },
+    {
+      "id": "fb23",
+      "date": "2024-01-20",
+      "amount": 60,
+      "category": "expense",
+      "description": "entertainment",
+      "notes": "Movie night AMC"
     }
   ]
 }

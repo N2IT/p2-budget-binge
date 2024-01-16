@@ -66,17 +66,17 @@ function CategorySummary({ initial }) {
     return (
         <>
             <h3 className="dbIncome">HOME</h3>
-            <h3 className="dbIncome-num">{homePercentage}</h3>
+            <h3 className="dbIncome-num">{homePercentage !== "NaN%" ? homePercentage : "0%"}</h3>
             <h3 className="dbIncome">AUTO</h3>
-            <h3 className="dbIncome-num">{autoPercentage}</h3>
+            <h3 className="dbIncome-num">{autoPercentage !== "NaN%" ? autoPercentage : "0%"}</h3>
             <h3 className="dbIncome">UTILITIES</h3>
-            <h3 className="dbIncome-num">{utilityPercentage}</h3>
+            <h3 className="dbIncome-num">{utilityPercentage !== "NaN%" ? utilityPercentage : "0%"}</h3>
             <h3 className="dbIncome">GROCERIES</h3>
-            <h3 className="dbIncome-num">{groceryPercentage}</h3>
+            <h3 className="dbIncome-num">{groceryPercentage !== "NaN%" ? groceryPercentage : "0%"}</h3>
             <h3 className="dbIncome">ENTERTAINMENT</h3>
-            <h3 className="dbIncome-num">{entPercentage}</h3>
+            <h3 className="dbIncome-num">{entPercentage !== "NaN%" ? entPercentage : "0%"}</h3>
             <h3 className="dbIncome">OTHER</h3>
-            <h3 className="dbIncome-num">{otherPercentage}</h3>
+            <h3 className="dbIncome-num">{otherPercentage !== "NaN%" ? otherPercentage : "0%"}</h3>
         </>
     )
 }

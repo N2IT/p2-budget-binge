@@ -1,71 +1,41 @@
-# Getting Started with Create React App
+# Budget Binge: Your Personal Finance Tracking App
+Use this personal financial tracking application to give yourself a short-term view of your checking acount balance.
+Add income and expense transactions to your local database to project your account balance.
+View your expense percentage breakdown by descriptions. Descriptions include Home, Auto, Groceries, Entertainment, Utilities, or Other.
+View/Delete any transaction posted to your database to keep account totals current.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Usage:
+Add Transactions to Your Database
+https://github.com/N2IT/p2-budget-binge/assets/32651728/52d422f2-c5e0-4520-b4ef-3bd3a14ba012
 
-## Available Scripts
+View / Delete Transactions from your Database
+https://github.com/N2IT/p2-budget-binge/assets/32651728/c02b326d-d8be-48f0-ab60-5ee8ab2a86f3
 
-In the project directory, you can run:
+View Dashboard for income, expense, and balance totals as well as live stock prices for Amazon, Apple, Google, Meta, and Netflix stock tickers.
+![atf Budget Binge](https://github.com/N2IT/p2-budget-binge/assets/32651728/51db4f93-469d-45e7-85cc-8b618ee956a0)
 
-### `npm start`
+View your expense percentages broken out by descriptions
+![2024-01-16 13_21_47-](https://github.com/N2IT/p2-budget-binge/assets/32651728/56b1fb02-d690-4695-a927-7c9869c00f4f)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Roadmap
+App created to meet minimum viable product requirements but I intend continue expanding on functionality:
+- Refactor to reduce repetitive code
+- Further Develop css theming for consistency across app
+- Implement additional functionality:
+    - Dashboard page:
+      - allow user to select stcck tickers for viewing
+      - add charting to stocks list
+      - add graphics to stocks list indicating a rise / drop in stock price compared to prior days close
+      - add click event to categories listed to fetch database information and render new page highlighting income / expense details of chosen category
+    - Transactions page:
+      - Edit cells in table
+      - allow sorting by any column in table
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Authors and Acknowledgement
+- External API- Free Stock Market API - https://site.financialmodelingprep.com/developer/docs
+- Bombing  custom font By Aquila Quentin/ Qkila (copyright) Free for personal use
+- Code / short mp4's created by n2it
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# p2-budget-binge
+# Project Status
+App has meet MVP requirements. 
+See roadmap for future development ideas when revisited.
