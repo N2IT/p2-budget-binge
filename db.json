@@ -1,36 +1,12 @@
 {
   "transactions": [
     {
-      "id": "7478",
-      "date": "2024-01-15",
-      "amount": 12335.05,
-      "category": "income",
-      "description": "miscellaneous",
-      "notes": "Balance"
-    },
-    {
       "id": "4272",
       "date": "2024-01-19",
       "amount": 2223.22,
       "category": "income",
       "description": "paycheck",
       "notes": "rainier"
-    },
-    {
-      "id": "3ff4",
-      "date": "2024-01-12",
-      "amount": 3000.23,
-      "category": "expense",
-      "description": "home",
-      "notes": "expense home did not touch description"
-    },
-    {
-      "id": "2a15",
-      "date": "2024-01-26",
-      "amount": 45.67,
-      "category": "expense",
-      "description": "auto",
-      "notes": "expense auto - 1st touch"
     },
     {
       "id": "7933",
@@ -63,6 +39,46 @@
       "category": "expense",
       "description": "other",
       "notes": "expense other no touch category"
+    },
+    {
+      "id": "624f",
+      "date": "2024-01-25",
+      "amount": 455.33,
+      "category": "income",
+      "description": "miscellaneous",
+      "notes": "freelance work payment"
+    },
+    {
+      "id": "6a80",
+      "date": "2024-01-26",
+      "amount": 343.22,
+      "category": "income",
+      "description": "miscellaneous",
+      "notes": "income misc no touch desc"
+    },
+    {
+      "id": "98e1",
+      "date": "2024-01-26",
+      "amount": 45.56,
+      "category": "expense",
+      "description": "entertainment",
+      "notes": "movie"
+    },
+    {
+      "id": "aa92",
+      "date": "2024-01-26",
+      "amount": 23.22,
+      "category": "expense",
+      "description": "entertainment",
+      "notes": "expense enter no touch desc"
+    },
+    {
+      "id": "805e",
+      "date": "2024-01-25",
+      "amount": 90,
+      "category": "expense",
+      "description": "groceries",
+      "notes": "QFC"
     }
   ]
 }

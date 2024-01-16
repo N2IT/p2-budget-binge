@@ -23,7 +23,7 @@ function App() {
 
   return (
     <>
-      <div class="App-header">
+      <div className="App-header">
         <NavBar />
       </div>
       <Outlet context={[transactions, onDeleteItem]} />

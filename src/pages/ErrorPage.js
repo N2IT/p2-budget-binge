@@ -8,7 +8,7 @@ function ErrorPage() {
     return (
         <>
             <header>
-                <div class="App-header">
+                <div className="App-header">
                     <NavBar />
                 </div>
             </header>

@@ -5,7 +5,7 @@ import "./NavBar.css"
 function Navbar() {
     return (
         <>
-            <div class="title-bar"><span class="test">Budget</span><img className="App-logo" src={"/fistFull.png"}></img><span class="test">Binge</span></div>
+            <div className="title-bar"><span className="test">Budget</span><img className="App-logo" src={"/fistFull.png"}></img><span className="test">Binge</span></div>
             <nav>
                 <NavLink
                     to="/"

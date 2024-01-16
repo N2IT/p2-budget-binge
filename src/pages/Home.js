@@ -49,7 +49,7 @@ function Home() {
                 <div className="grid-container">
                     <BalanceSummary initial={initial} />
                     <div className="dbTickerSideBar">
-                        <div class="refresh-date">{`Current Date / Time: ${timeStamp}`}<br /><span>FAANG Stock Tickers (Update on Refresh)</span></div>
+                        <div className="refresh-date">{`Current Date / Time: ${timeStamp}`}<br /><span>FAANG Stock Tickers (Update on Refresh)</span></div>
                         <div className="stock-box">
                             <StockComponent stocks={stocksToDisplay} loading={isLoading} />
                         </div>

@@ -91,12 +91,12 @@ function TransactionForm() {
         <label htmlFor='Notes'>Notes </label>
         <input value={notes} onChange={(e) => setNotes(e.target.value)} name="notes" id="notes"></input>
         <br />
-        {date && amount ? <button class="button" type="submit">Send It</button> : null}
+        {date && amount ? <button className="button" type="submit">Send It</button> : null}
 
     </form>
 
     return (
-        <div class="add-transactions-form">
+        <div className="add-transactions-form">
             <h1>Add Transactions Here</h1>
             {form ? formBody : <><h2>Transaction Added</h2><br /><button onClick={toggleForm} className="button">Add another</button></>}
 
