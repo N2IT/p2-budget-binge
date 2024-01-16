@@ -6,10 +6,10 @@ View/Delete any transaction posted to your database to keep account totals curre
 
 # Usage:
 Add Transactions to Your Database
-https://github.com/N2IT/p2-budget-binge/assets/32651728/52d422f2-c5e0-4520-b4ef-3bd3a14ba012
+![AddingTransactions](https://github.com/N2IT/p2-budget-binge/assets/32651728/576896d5-fa5c-4fec-9ef8-8679940b7bb1)
 
 View / Delete Transactions from your Database
-https://github.com/N2IT/p2-budget-binge/assets/32651728/c02b326d-d8be-48f0-ab60-5ee8ab2a86f3
+![DeletingTransactions](https://github.com/N2IT/p2-budget-binge/assets/32651728/f2df5038-cf67-44f4-8d9d-0e7298ec854a)
 
 View Dashboard for income, expense, and balance totals as well as live stock prices for Amazon, Apple, Google, Meta, and Netflix stock tickers.
 ![atf Budget Binge](https://github.com/N2IT/p2-budget-binge/assets/32651728/51db4f93-469d-45e7-85cc-8b618ee956a0)
