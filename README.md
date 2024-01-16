@@ -1,8 +1,20 @@
-# Budget Binge: Your Personal Finance Tracking App
+<p align="center">
+<img src="/fistFull.png" length=10% width=10%>
+</p>
+<h1 align="center">Budget Binge: Your Personal Finance Tracking App</h1>
+<p align="center"><b>Use this personal financial tracking application to give yourself a short-term view of your checking acount balance.
+Add income and expense transactions to your local database to project your account balance.
+View your expense percentage breakdown by descriptions. Descriptions include Home, Auto, Groceries, Entertainment, Utilities, or Other.
+View/Delete any transaction posted to your database to keep account totals current.</b>
+</p>
+
+***
+
+<!-- # Budget Binge: Your Personal Finance Tracking App
 Use this personal financial tracking application to give yourself a short-term view of your checking acount balance.
 Add income and expense transactions to your local database to project your account balance.
 View your expense percentage breakdown by descriptions. Descriptions include Home, Auto, Groceries, Entertainment, Utilities, or Other.
-View/Delete any transaction posted to your database to keep account totals current.
+View/Delete any transaction posted to your database to keep account totals current. -->
 
 # Usage:
 Add Transactions to Your Database
