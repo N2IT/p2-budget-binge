@@ -9,92 +9,60 @@
       "notes": "Balance"
     },
     {
-      "id": "b8d3",
-      "date": "2024-01-17",
-      "amount": 70,
-      "category": "expense",
-      "description": "utilities",
-      "notes": "CentLink"
-    },
-    {
-      "id": "d2aa",
-      "date": "2024-01-30",
-      "amount": 42,
-      "category": "expense",
-      "description": "other",
-      "notes": "KEXP / Donation"
-    },
-    {
-      "id": "c3a4",
-      "date": "2024-01-31",
-      "amount": 14.32,
-      "category": "expense",
-      "description": "utilities",
-      "notes": "Arlo Security"
-    },
-    {
-      "id": "e449",
+      "id": "4272",
       "date": "2024-01-19",
-      "amount": 400,
-      "category": "expense",
-      "description": "groceries",
-      "notes": "Amazon Delivery"
+      "amount": 2223.22,
+      "category": "income",
+      "description": "paycheck",
+      "notes": "rainier"
     },
     {
-      "id": "c6ca",
-      "date": "2024-01-13",
-      "amount": 45.87,
-      "category": "expense",
-      "description": "entertainment",
-      "notes": "Movies"
-    },
-    {
-      "id": "f5aa",
-      "date": "2024-01-18",
-      "amount": 766.22,
+      "id": "3ff4",
+      "date": "2024-01-12",
+      "amount": 3000.23,
       "category": "expense",
       "description": "home",
-      "notes": "rent"
+      "notes": "expense home did not touch description"
     },
     {
-      "id": "1c61",
-      "date": "2024-01-02",
-      "amount": 368.77,
+      "id": "2a15",
+      "date": "2024-01-26",
+      "amount": 45.67,
       "category": "expense",
       "description": "auto",
-      "notes": "honda"
+      "notes": "expense auto - 1st touch"
     },
     {
-      "id": "c7c6",
-      "date": "2024-01-17",
-      "amount": 23.34,
-      "category": "expense",
-      "description": "groceries",
-      "notes": "icecream"
-    },
-    {
-      "id": "54ff",
-      "date": "2024-01-05",
-      "amount": 72.22,
-      "category": "expense",
-      "description": "utilities",
-      "notes": "gas bill"
-    },
-    {
-      "id": "9c27",
-      "date": "2024-01-03",
-      "amount": 60,
-      "category": "expense",
-      "description": "utilities",
-      "notes": "internet"
-    },
-    {
-      "id": "613e",
+      "id": "7933",
       "date": "2024-01-19",
-      "amount": 22.87,
+      "amount": 23.23,
       "category": "income",
-      "description": "miscellaneous",
-      "notes": "paid back by friend"
+      "description": "paycheck",
+      "notes": "income paycheck no touch desc"
+    },
+    {
+      "id": "fdec",
+      "date": "2024-01-26",
+      "amount": 387.22,
+      "category": "expense",
+      "description": "home",
+      "notes": "expense home no touch desc"
+    },
+    {
+      "id": "7994",
+      "date": "2024-01-16",
+      "amount": 2.33,
+      "category": "expense",
+      "description": "other",
+      "notes": "expense other no touch category"
+    },
+    {
+      "id": "a128",
+      "date": "2024-01-19",
+      "amount": 3344.33,
+      "category": "expense",
+      "description": "other",
+      "notes": "expense other no touch category"
     }
   ]
 }

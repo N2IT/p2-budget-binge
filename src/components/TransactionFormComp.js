@@ -8,6 +8,13 @@ function TransactionForm() {
     const [isIncome, setAsIncome] = useState(true)
     const [form, setAsForm] = useState(true)
     const [notes, setNotes] = useState("")
+    // const [newForm, setResetForm] = useState({
+    //     date: date,
+    //     amount: 0,
+    //     category: "income",
+    //     description: "paycheck",
+    //     notes: ""
+    // })
 
     const formData = {
         date: date,
@@ -17,11 +24,18 @@ function TransactionForm() {
         notes: notes
     }
 
+    //Toggle Description based on Category selected
     function toggleCategory(e) {
         setAsIncome((income) => !income)
         setCategory(e)
+        if(e !== 'income'){
+            setDescription('home')
+        } else {setDescription('paycheck')}
     }
 
+    //POSTS form data to db.json file
+    //Toggles form to show submission confirmation
+    //Resets form to default state
     function handleSubmit(e) {
         e.preventDefault();
         fetch(`http://localhost:3000/transactions`, {
@@ -32,17 +46,17 @@ function TransactionForm() {
             body: JSON.stringify(formData)
         })
         toggleForm()
+        setDate("")
         setAmount(0)
         setNotes("")
-        setDate("")
     }
 
+    //Toggles form visibility
+    //Initially invoked when form submitted
+    //Invoked if user wants to make another submission
     function toggleForm() {
         setAsForm((form) => !form)
-    }
 
-    function windowRefresh(){
-        window.location.reload(false)
     }
 
     const formBody = <form className="formStyle" method="post" onSubmit={handleSubmit}>
@@ -84,7 +98,7 @@ function TransactionForm() {
     return (
         <div class="add-transactions-form">
             <h1>Add Transactions Here</h1>
-            {form ? formBody : <><h2>Transaction Added</h2><br /><button onClick={windowRefresh} className="button">Add another</button></>}
+            {form ? formBody : <><h2>Transaction Added</h2><br /><button onClick={toggleForm} className="button">Add another</button></>}
 
         </div>
 

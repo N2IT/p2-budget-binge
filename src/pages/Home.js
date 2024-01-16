@@ -9,7 +9,6 @@ import RecentTransactions from "../components/RecentTransactions";
 function Home() {
 
     const [transactions] = useOutletContext();
-
     const [stocks, setStocks] = useState([])
     const [isLoading, setIsLoading] = useState(true)
     const initial = 0
@@ -34,8 +33,12 @@ function Home() {
             return stock.symbol && stock.price
         } else if (stock.symbol === "GOOGL") {
             return stock.symbol && stock.price
+        } else {
+            return null
         }
     })
+
+ 
 
     const timeStamp = new Date();
 
@@ -46,7 +49,7 @@ function Home() {
                 <div className="grid-container">
                     <BalanceSummary initial={initial} />
                     <div className="dbTickerSideBar">
-                        <div class="refresh-date">{`Current Date / Time: ${timeStamp}`}</div>
+                        <div class="refresh-date">{`Current Date / Time: ${timeStamp}`}<br /><span>FAANG Stock Tickers (Update on Refresh)</span></div>
                         <div className="stock-box">
                             <StockComponent stocks={stocksToDisplay} loading={isLoading} />
                         </div>

@@ -7,12 +7,12 @@
 }
 
 .active {
-    color: #03e9f4;
+    color: #bcff00;;
     text-decoration: underline;
-    text-shadow: 0 0 5px #508CA4,
-    0 0 25px #508CA4,
-    0 0 50px #508CA4,
-    0 0 100px #508CA4;
+    text-shadow: 0 0 5px #bcff00,
+    0 0 25px #bcff00,
+    0 0 50px #bcff00,
+    0 0 100px #bcff00;
 }
 
 nav {
