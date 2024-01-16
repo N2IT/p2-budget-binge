@@ -79,6 +79,30 @@
       "category": "expense",
       "description": "groceries",
       "notes": "QFC"
+    },
+    {
+      "id": "3020",
+      "date": "2024-02-02",
+      "amount": 9898,
+      "category": "income",
+      "description": "paycheck",
+      "notes": "big time"
+    },
+    {
+      "id": "169d",
+      "date": "2024-01-27",
+      "amount": 23.22,
+      "category": "expense",
+      "description": "groceries",
+      "notes": "icecream"
+    },
+    {
+      "id": "b720",
+      "date": "2024-01-24",
+      "amount": 3433.22,
+      "category": "income",
+      "description": "paycheck",
+      "notes": "jan payment"
     }
   ]
 }

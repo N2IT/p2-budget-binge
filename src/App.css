@@ -230,7 +230,7 @@ select {
   font-size: calc(1px + 2vmin);
   background-color: #282C34;
   color: white;
-  border: 1px solid white;
+  border: 2px solid white;
   transition: ease-in-out 330ms;
   padding: 1%;
   width: 150px;
@@ -239,7 +239,7 @@ select {
 .button:hover {
   background-color: #508CA4;
   color: white;
-  border: none;
+  border: 2px solid white;
   box-shadow: 0 0 5px #508CA4,
               0 0 25px #508CA4,
               0 0 50px #508CA4,
