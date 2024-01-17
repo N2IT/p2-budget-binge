@@ -71,6 +71,30 @@
       "category": "expense",
       "description": "auto",
       "notes": "gas fill"
+    },
+    {
+      "id": "6056",
+      "date": "2024-01-24",
+      "amount": 838.22,
+      "category": "expense",
+      "description": "utilities",
+      "notes": "all"
+    },
+    {
+      "id": "71c3",
+      "date": "2024-02-08",
+      "amount": 2344.22,
+      "category": "income",
+      "description": "miscellaneous",
+      "notes": "balance from Jan"
+    },
+    {
+      "id": "2471",
+      "date": "2024-01-22",
+      "amount": 234.22,
+      "category": "income",
+      "description": "miscellaneous",
+      "notes": "freelance"
     }
   ]
 }

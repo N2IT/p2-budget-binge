@@ -2,7 +2,7 @@ import App from './App'
 import Home from './components/Home';
 import Transactions from './components/Transactions'
 import ErrorPage from './components/ErrorPage';
-import TransactionFormComp from './components/TransactionFormComp'
+import AddTransacction from './components/AddTransaction'
 
 const routes = [
   {
@@ -20,7 +20,7 @@ const routes = [
       },
       {
         path: '/add-transactions',
-        element: <TransactionFormComp />,
+        element: <AddTransacction />,
       }
     ]
   }
