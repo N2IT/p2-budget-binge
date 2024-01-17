@@ -5,6 +5,7 @@ function TransactionComponent() {
     const [ transactions, onDeleteItem ] = useOutletContext();
 
     function handleDelete(deletedLine) {
+        // console.log(deletedLine.id)
         fetch(`http://localhost:3000/transactions/${deletedLine.id}`, {
             method: 'DELETE'
         })

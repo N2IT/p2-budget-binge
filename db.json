@@ -1,68 +1,52 @@
 {
   "transactions": [
     {
-      "id": "1bb1",
-      "date": "2024-01-01",
+      "id": "b363",
+      "date": "2024-01-04",
       "amount": 3500,
       "category": "income",
       "description": "miscellaneous",
-      "notes": "Balance"
+      "notes": "balance from december"
     },
     {
-      "id": "da6a",
-      "date": "2024-01-03",
-      "amount": 2500,
+      "id": "58bf",
+      "date": "2024-01-25",
+      "amount": 1900,
       "category": "expense",
       "description": "home",
-      "notes": "mortgage / rent"
+      "notes": "mortgage"
     },
     {
-      "id": "bd55",
-      "date": "2024-01-05",
-      "amount": 200,
+      "id": "8169",
+      "date": "2024-01-29",
+      "amount": 98.22,
       "category": "expense",
       "description": "groceries",
-      "notes": "amazon fresh"
+      "notes": "qfc"
     },
     {
-      "id": "ce18",
-      "date": "2024-01-08",
-      "amount": 700,
-      "category": "income",
-      "description": "miscellaneous",
-      "notes": "freelance payment"
-    },
-    {
-      "id": "f820",
-      "date": "2024-01-18",
-      "amount": 450,
+      "id": "a4da",
+      "date": "2024-01-26",
+      "amount": 829.22,
       "category": "expense",
       "description": "auto",
-      "notes": "honda"
+      "notes": "honda / subaru"
     },
     {
-      "id": "3ac6",
-      "date": "2024-01-26",
-      "amount": 350,
+      "id": "0d85",
+      "date": "2024-02-01",
+      "amount": 22.11,
       "category": "expense",
-      "description": "utilities",
-      "notes": "water / waste"
+      "description": "entertainment",
+      "notes": "movie purchase"
     },
     {
-      "id": "cde6",
-      "date": "2024-01-31",
+      "id": "465e",
+      "date": "2024-01-27",
       "amount": 40,
       "category": "expense",
       "description": "other",
       "notes": "Donation"
-    },
-    {
-      "id": "fb23",
-      "date": "2024-01-20",
-      "amount": 60,
-      "category": "expense",
-      "description": "entertainment",
-      "notes": "Movie night AMC"
     }
   ]
 }

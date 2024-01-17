@@ -1,6 +1,11 @@
 import { useState } from 'react'
+import { useOutletContext, useNavigate } from 'react-router-dom'
+
 
 function TransactionForm() {
+    const [transactions, onDeleteItem, onAddTransaction] = useOutletContext();
+    const navigate = useNavigate();
+
     const [date, setDate] = useState("")
     const [amount, setAmount] = useState(0)
     const [category, setCategory] = useState("income")
@@ -8,13 +13,8 @@ function TransactionForm() {
     const [isIncome, setAsIncome] = useState(true)
     const [form, setAsForm] = useState(true)
     const [notes, setNotes] = useState("")
-    // const [newForm, setResetForm] = useState({
-    //     date: date,
-    //     amount: 0,
-    //     category: "income",
-    //     description: "paycheck",
-    //     notes: ""
-    // })
+
+    const dataItems = transactions.map((transaction) => transaction)
 
     const formData = {
         date: date,
@@ -24,7 +24,6 @@ function TransactionForm() {
         notes: notes
     }
 
-    //Toggle Description based on Category selected
     function toggleCategory(e) {
         setAsIncome((income) => !income)
         setCategory(e)
@@ -33,9 +32,6 @@ function TransactionForm() {
         } else {setDescription('paycheck')}
     }
 
-    //POSTS form data to db.json file
-    //Toggles form to show submission confirmation
-    //Resets form to default state
     function handleSubmit(e) {
         e.preventDefault();
         fetch(`http://localhost:3000/transactions`, {
@@ -45,18 +41,13 @@ function TransactionForm() {
             },
             body: JSON.stringify(formData)
         })
-        toggleForm()
-        setDate("")
-        setAmount(0)
-        setNotes("")
-    }
+        .then(r=>r.json())
+        .then((data)=>onAddTransaction(data))
+        .catch(error => {
+            console.error('Error during transaction addition:', error);
+        });
 
-    //Toggles form visibility
-    //Initially invoked when form submitted
-    //Invoked if user wants to make another submission
-    function toggleForm() {
-        setAsForm((form) => !form)
-
+        navigate("/transaction-list")
     }
 
     const formBody = <form className="formStyle" method="post" onSubmit={handleSubmit}>
@@ -98,7 +89,7 @@ function TransactionForm() {
     return (
         <div className="add-transactions-form">
             <h1>Add Transactions Here</h1>
-            {form ? formBody : <><h2>Transaction Added</h2><br /><button onClick={toggleForm} className="button">Add another</button></>}
+            {formBody}
 
         </div>
 
