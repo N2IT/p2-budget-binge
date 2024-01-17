@@ -90,7 +90,6 @@ function TransactionForm() {
         <div className="add-transactions-form">
             <h1>Add Transactions Here</h1>
             {formBody}
-
         </div>
 
     )

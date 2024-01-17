@@ -47,6 +47,22 @@
       "category": "expense",
       "description": "other",
       "notes": "Donation"
+    },
+    {
+      "id": "d037",
+      "date": "2024-01-22",
+      "amount": 345.33,
+      "category": "expense",
+      "description": "utilities",
+      "notes": "waste / water"
+    },
+    {
+      "id": "e8d6",
+      "date": "2024-01-26",
+      "amount": 223,
+      "category": "income",
+      "description": "miscellaneous",
+      "notes": "freelance"
     }
   ]
 }
