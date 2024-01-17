@@ -1,8 +1,7 @@
 import App from './App'
-import Home from './pages/Home';
-import AddTransactions from './pages/AddTransactions';
-import Transactions from './pages/Transactions'
-import ErrorPage from './pages/ErrorPage';
+import Home from './components/Home';
+import Transactions from './components/Transactions'
+import ErrorPage from './components/ErrorPage';
 import TransactionFormComp from './components/TransactionFormComp'
 
 const routes = [

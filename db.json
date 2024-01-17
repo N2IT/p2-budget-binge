@@ -63,6 +63,14 @@
       "category": "income",
       "description": "miscellaneous",
       "notes": "freelance"
+    },
+    {
+      "id": "0ce9",
+      "date": "2024-01-29",
+      "amount": 23.45,
+      "category": "expense",
+      "description": "auto",
+      "notes": "gas fill"
     }
   ]
 }

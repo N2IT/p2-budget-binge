@@ -1,5 +1,5 @@
 //Transactions.js
-import TransactionComponent from "../components/TransactionComponent"
+import TransactionList from "./TransactionList"
 import { Outlet, useOutletContext } from 'react-router-dom'
 
 function Transactions() {
@@ -10,7 +10,7 @@ function Transactions() {
             <main>
                 <h1>Where did all the money go?</h1>
                 <div className="table-flow">
-                    <TransactionComponent />
+                    <TransactionList />
                 </div>
             </main>
             <Outlet context={transactions} />

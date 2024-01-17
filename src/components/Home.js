@@ -1,10 +1,10 @@
-import StockComponent from "../components/StockComponent";
-import BalanceSummary from '../components/BalanceSummary';
-import CategorySummary from "../components/CategorySummary";
+import StockComponent from "./StockComponent";
+import BalanceSummary from './BalanceSummary';
+import CategorySummary from "./CategorySummary";
 import React, { useState, useEffect } from "react";
 import { Outlet, useOutletContext } from "react-router-dom";
 import '../App.css';
-import RecentTransactions from "../components/RecentTransactions";
+import RecentTransactions from "./RecentTransactions";
 
 function Home() {
 
