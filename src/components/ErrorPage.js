@@ -12,9 +12,10 @@ function ErrorPage() {
                     <NavBar />
                 </div>
             </header>
-            <main>
-                <h1>Oh no! Where'd the money go???</h1>
-                <h2>You should look somewhere else...</h2>
+            <main className="error-page">
+                <h1 className="test">Oh no! Where'd the money go???</h1>
+                {/* <h2 className="test">You should look somewhere else...</h2> */}
+                <div className="error-img"><img src={"./PiggyBankBusted.png"}></img></div>
             </main>
         </>
     );

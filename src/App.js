@@ -15,14 +15,13 @@ function App() {
       .then(transactions => setTransactions(transactions))
   }, [])
 
-  function onDeleteItem(deletedItem){
-    console.log(deletedItem)
+  function onDeleteItem(deletedItem) {
     const updatedTransactions = transactions.filter((transaction) => transaction.id !== deletedItem.id)
     setTransactions(updatedTransactions)
   }
 
-  function onAddTransaction(info){
-    setTransactions([...transactions,info])
+  function onAddTransaction(info) {
+    setTransactions([...transactions, info])
   }
 
   return (
@@ -30,7 +29,7 @@ function App() {
       <div className="App-header">
         <NavBar />
       </div>
-      <Outlet context={[ transactions, onDeleteItem, onAddTransaction ]} />
+      <Outlet context={[transactions, onDeleteItem, onAddTransaction]} />
     </>
   );
 }

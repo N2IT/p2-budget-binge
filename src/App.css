@@ -125,7 +125,7 @@ h3 {
 
 .recent-transactions {
   grid-row: 2;
-  grid-column: 1/7;
+  grid-column: 1/8;
   border: 1px solid #666;
   background-color: #508ca48f;
   border-radius: 8px;
@@ -140,7 +140,7 @@ h3 {
 }
 
 .category-breakdown {
-  grid-column: 7/13;
+  grid-column: 8/13;
   border: 1px solid #666;
   background-color: #BFD7EA;
   border-radius: 8px;
@@ -230,7 +230,7 @@ select {
   font-size: calc(1px + 2vmin);
   background-color: #282C34;
   color: white;
-  border: 2px solid white;
+  border: 1px solid white;
   transition: ease-in-out 330ms;
   padding: 1%;
   width: 150px;
@@ -238,12 +238,16 @@ select {
 
 .button:hover {
   background-color: #508CA4;
-  color: white;
-  border: 2px solid white;
-  box-shadow: 0 0 5px #508CA4,
-              0 0 25px #508CA4,
-              0 0 50px #508CA4,
-              0 0 100px #508ca4;
+  color: #bcff00;
+  border: 1px solid #bcff00;
+  text-shadow:0 0 5px #bcff00,
+  0 0 25px #bcff00,
+  0 0 50px #bcff00,
+  0 0 100px #bcff00;
+  box-shadow: 0 0 5px #bcff00
+              0 0 25px #bcff00,
+              0 0 50px #bcff00,
+              0 0 100px #bcff00;
 }
 
 .formStyle {
@@ -254,4 +258,21 @@ select {
   gap: 0;
 }
 
+/**************************** Error Page ************************/
+
+.error-page {
+  text-align: center;
+  background: #282c34;
+  height: 800px;
+}
+
+.error-page .test {
+  color: #C64191;
+  text-shadow:0 0 5px #C64191,
+  0 0 25px #C64191,
+  0 0 50px #C64191,
+  0 0 100px #C64191;
+  margin: 0;
+  padding: 5%;
+}
 

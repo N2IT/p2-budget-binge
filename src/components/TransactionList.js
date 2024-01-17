@@ -2,20 +2,20 @@ import { useOutletContext } from "react-router-dom"
 
 
 function TransactionComponent() {
-    const [ transactions, onDeleteItem ] = useOutletContext();
+    const [transactions, onDeleteItem] = useOutletContext();
 
     function handleDelete(deletedLine) {
         // console.log(deletedLine.id)
         fetch(`http://localhost:3000/transactions/${deletedLine.id}`, {
             method: 'DELETE'
         })
-        .then(r => r.json()) 
-        .then(() => onDeleteItem(deletedLine))
-        .catch(error => {
-            console.error('Error during deletion:', error);
-        });
+            .then(r => r.json())
+            .then(() => onDeleteItem(deletedLine))
+            .catch(error => {
+                console.error('Error during deletion:', error);
+            });
     }
-    
+
 
     const transactionalData = transactions.map((transaction) => {
         return (

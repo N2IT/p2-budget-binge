@@ -14,7 +14,6 @@ function AddTransaction() {
     const [form, setAsForm] = useState(true)
     const [notes, setNotes] = useState("")
 
-
     const formData = {
         date: date,
         amount: parseFloat(amount),
@@ -48,8 +47,6 @@ function AddTransaction() {
             .catch(error => {
                 console.error('Error during transaction addition:', error);
             });
-
-        
     }
 
     return (
@@ -88,10 +85,8 @@ function AddTransaction() {
                 <input value={notes} onChange={(e) => setNotes(e.target.value)} name="notes" id="notes"></input>
                 <br />
                 {date && amount ? <button className="button" type="submit">Send It</button> : null}
-
             </form>
         </div>
-
     )
 }
 
