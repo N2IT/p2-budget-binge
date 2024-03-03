@@ -3,6 +3,7 @@ import { Outlet } from 'react-router-dom'
 import NavBar from './components/NavBar';
 import './App.css';
 import './AppMobile.css';
+import ClickMe from './components/ClickMe';
 
 function App() {
 
@@ -14,6 +15,10 @@ function App() {
       .then(r => r.json())
       .then(transactions => setTransactions(transactions))
   }, [])
+
+  // useEffect(() => {
+  //   console.log('hi')
+  // })
 
   function onDeleteItem(deletedItem) {
     const updatedTransactions = transactions.filter((transaction) => transaction.id !== deletedItem.id)

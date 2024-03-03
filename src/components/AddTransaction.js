@@ -11,7 +11,6 @@ function AddTransaction() {
     const [category, setCategory] = useState("income")
     const [description, setDescription] = useState("paycheck")
     const [isIncome, setAsIncome] = useState(true)
-    const [form, setAsForm] = useState(true)
     const [notes, setNotes] = useState("")
 
     const formData = {

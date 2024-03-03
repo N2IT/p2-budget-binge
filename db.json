@@ -1,44 +1,12 @@
 {
   "transactions": [
     {
-      "id": "f556",
+      "id": "5891",
       "date": "2024-01-01",
-      "amount": 1500,
+      "amount": 4567.89,
       "category": "income",
       "description": "miscellaneous",
       "notes": "Balance from December"
-    },
-    {
-      "id": "2942",
-      "date": "2024-01-03",
-      "amount": 1000,
-      "category": "expense",
-      "description": "home",
-      "notes": "mortgage"
-    },
-    {
-      "id": "d2c1",
-      "date": "2024-01-06",
-      "amount": 200,
-      "category": "expense",
-      "description": "groceries",
-      "notes": "Amazon Fresh"
-    },
-    {
-      "id": "d105",
-      "date": "2024-01-08",
-      "amount": 350,
-      "category": "income",
-      "description": "miscellaneous",
-      "notes": "freelance work"
-    },
-    {
-      "id": "cfb8",
-      "date": "2024-01-19",
-      "amount": 56.99,
-      "category": "expense",
-      "description": "auto",
-      "notes": "fill up tank"
     }
   ]
 }
