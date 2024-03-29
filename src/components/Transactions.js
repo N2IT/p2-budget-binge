@@ -8,7 +8,7 @@ function Transactions() {
     return (
         <>
             <main>
-                <h1>Where did all the money go?</h1>
+                <h1 className="list-header">Where'd the dough go?</h1>
                 <div className="table-flow">
                     <TransactionList />
                 </div>

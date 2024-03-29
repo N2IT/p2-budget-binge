@@ -45,24 +45,23 @@ function Home() {
     return (
         <>
             <main>
-                <h1>Dashboard / Balance</h1>
                 <div className="grid-container">
                     <BalanceSummary initial={initial} />
                     <div className="dbTickerSideBar">
-                        <div className="refresh-date">{`Current Date / Time: ${timeStamp}`}<br /><span>FAANG Stock Tickers (Update on Refresh)</span></div>
+                        <div className="refresh-date">{`Current Date / Time: ${timeStamp}`}<br /><br /><span>MAANG Stock Tickers (Update on Refresh)</span></div>
                         <div className="stock-box">
                             <StockComponent stocks={stocksToDisplay} loading={isLoading} />
                         </div>
                     </div>
                     <div className="recent-transactions">
-                        <h2>Recent Transactions</h2>
+                        <h2 className='list-header'>Recent Transactions</h2>
                         <RecentTransactions />
                         {/* <div className="grid-container">
                             
                         </div> */}
                     </div>
                     <div className="category-breakdown">
-                        <h2>% Breakdown by Expense</h2>
+                        <h2 className="list-header">Percentage Breakdown by Expense</h2>
                         <div className="grid-container">
                             <CategorySummary initial={initial} />
                         </div>

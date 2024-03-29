@@ -1,12 +1,28 @@
 {
   "transactions": [
     {
-      "id": "5891",
-      "date": "2024-01-01",
-      "amount": 4567.89,
+      "id": "6f33",
+      "date": "2024-03-08",
+      "amount": 2234,
       "category": "income",
-      "description": "miscellaneous",
-      "notes": "Balance from December"
+      "description": "paycheck",
+      "notes": ""
+    },
+    {
+      "id": "bee9",
+      "date": "2024-03-16",
+      "amount": 100,
+      "category": "income",
+      "description": "paycheck",
+      "notes": "Test"
+    },
+    {
+      "id": "3d92",
+      "date": "2024-03-15",
+      "amount": 9000,
+      "category": "income",
+      "description": "paycheck",
+      "notes": ""
     }
   ]
 }

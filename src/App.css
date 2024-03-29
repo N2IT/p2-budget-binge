@@ -19,13 +19,13 @@
 
 .test {
   font-family: "Bombing";
-  font-size: calc(25px + 5vmin);
+  font-size: calc(35px + 5vmin);
   color: #03e9f4;
-  letter-spacing: 12px;
+  /* letter-spacing: 8px; */
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: transparent;
   min-height: 10vh;
   display: flex;
   flex-direction: column;
@@ -33,6 +33,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 0 0 3%;
 }
 
 .App-link {
@@ -66,92 +67,137 @@ h3 {
   grid-template-rows: repeat(1, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  padding: 2% 5%;
+  padding: 0 5%;
   background-color: none;
 }
 
 .stock-box {
-  display: flex;
+  color: #ffffff;
+  /* display: flex; */
   justify-content: space-around;
-  padding: 2% 0;
+  padding: 1% 0;
 }
 
 .stock-listing {
   display: inline-flex;
   flex-wrap: wrap;
-  padding: 0 3%;
+  padding: 0;
   margin: 2%;
-  border: 2px solid;
+  border: none;
   border-radius: 5px;
-  background-color: #0a875433;
+  background-color: transparent;
+  transform: rotate(330deg);
 }
 
-.stock-name, .stock-price {
-  font-size: calc(7px + 2vmin);
+.stock-name {
+  font-size: calc(17px + 9vmin);
+  color:#03e9f4;
 }
 
 .stock-price {
-  color: #0A8754;
+  font-size: calc(17px + 9vmin);
+  color: #bcff00;
 }
 
 .refresh-date {
-  font-size: calc(.25px + 2vmin);
+  font-size: calc(15px + 5vmin);
   padding: 0 3px;
+  color: #ffffff
 }
 
 
 /**************************** HOME page ****************************/
-.dbBoxPrimary,
-.dbIncome {
-  grid-column: 1/9;
-  background-color: #0a875433;
-  border: 1px solid #666666;
+.dbBoxPrimary {
+  grid-column: 1/6;
+  grid-row: 1;
+  background-color: transparent;
+  border: none;
   border-radius: 5px;
 }
 
-.dbBoxPrimary .dbIncome {
-  background-color: white;
+.dbIncome {
+  grid-column: 1/9;
 }
 
-.dbTickerSideBar,
-.dbIncome-num {
-  grid-column: 9/13;
+.dbBoxPrimary .dbIncome {
+  background-color: transparent;
+}
+
+.dbBoxPrimary .test {
+  font-size: calc(50px + 3vmin);
+  color: #5dfabf;
+  
+}
+
+main > .test {
+  font-size: calc(15px + 3vmin);
+  color: #C64191;
+  padding: 0 9%;
+  /* text-shadow: 0 0 5px #C64191, 0 0 25px #C64191, 0 0 50px #C64191, 0 0 100px #C64191; */
+}
+
+.dbTickerSideBar {
+  grid-column: 1/13;
+  grid-row: 4;
   text-decoration: none;
-  background-color: white;
-  border: 1px solid #666;
+  background-color: none;
+  border: none;
   border-radius: 8px;
   text-align: center;
 }
 
+.dbIncome-num {
+  grid-column: 10/13;
+}
+
 .recent-transactions {
+  margin: 5% 0;
   grid-row: 2;
-  grid-column: 1/8;
-  border: 1px solid #666;
-  background-color: #508ca48f;
+  grid-column: 1 / 13;
+  border: 8px solid #bcff00;
+  box-shadow: 0 0 5px #bcff00,
+    0 0 25px #bcff00,
+    0 0 50px #bcff00,
+    0 0 100px #bcff00;
+  /* background-color: #508ca48f; */
   border-radius: 8px;
   overflow-y: auto;
   overflow-x: auto;
   height: calc(50vh - 10px);
-  color: black;
+  color: white;
+}
+
+.list-header {
+  font-size: calc(15px + 3vmin);
+  padding: 0 4%;
+  color: #C64191;
 }
 
 .recent-transactions table th {
-  font-size: calc(3px + 2vmin);
+  font-size: calc(35px + 2vmin);
 }
 
 .category-breakdown {
-  grid-column: 8/13;
-  border: 1px solid #666;
-  background-color: #BFD7EA;
+  /* margin: 3% 0; */
+  grid-column: 7 / 13;
+  grid-row: 1;
+  /* border: 1px solid #666; */
+  background-color: #5dfabf;
   border-radius: 8px;
+  /* padding: 2%; */
+  box-shadow: 0 0 5px #5dfabf,
+    0 0 25px #5dfabf,
+    0 0 50px #5dfabf,
+    0 0 100px #5dfabf;
   
 }
 
 .category-breakdown .dbIncome,
 .category-breakdown .dbIncome-num {
-  background-color: white;
+  background-color: transparent;
   margin: 0;
   padding: 0;
+  font-size: calc(35px + 4vmin);
 } 
 
 
@@ -163,16 +209,17 @@ h3 {
 }
 
 table, th, td {
-  border: 1px solid #666;
+  border: 1px solid #ffffff;
+  color: white;
 }
 
 th {
-  font-size: calc(10px + 2vmin);
+  font-size: calc(35px + 2vmin);
   width: 1%;
 }
 
 td {
-  font-size: calc(5px + 2vmin);
+  font-size: calc(25px + 4vmin);
   text-align: center;
   overflow-x: hidden;
   white-space: nowrap;
@@ -186,6 +233,16 @@ tfoot td {
 
 .delete-btn {
   margin: 0 0 2px;
+  font-size: calc(25px + 4vmin);
+  color: #ff6767;
+  cursor: pointer;
+}
+
+.delete-btn:hover{
+  text-shadow: 0 0 5px #ff6767,
+  0 0 25px #ff6767,
+  0 0 50px #ff6767,
+  0 0 100px #ff6767;
 }
 
 
@@ -193,61 +250,71 @@ tfoot td {
 
 .add-transactions-form{
   text-align: center;
-  background-color: #f3f1f5;
+  background-color: #5dfabf;
   max-width: 650px;
   margin: auto;
   border-radius: 10px;
-  box-shadow: 2px 2px 10px #666;
-  padding: 2%;
-  margin-top: 2%;
+  box-shadow: 0 0 5px #000, 0 0 25px #000, 0 0 50px #000, 0 0 100px #000;
+  padding: 1%;
+}
+
+.add-transactions-form > .test {
+  padding: 0;
 }
 
 input {
   width: 250px;
   height: 35px;
-  font-size: calc(10px + 1vmin);
+  font-size: calc(15px + 2vmin);
   text-align: center;
   border-radius: 5px;
   margin: 0;
+  font-family: 'bombing';
+  background: transparent;
+  border: none;
 }
 
 label {
-  font-size: calc(10px + 2vmin);
+  font-size: calc(20px + 4vmin);
 }
 
 select {
   width: 250px;
   height: 35px;
-  font-size: calc(10px + 1vmin);
+  font-family: 'bombing';
+  font-size: calc(15px + 2vmin);
   text-align: center;
   border-radius: 5px;
   margin: 0;
-  border: 2px solid black; 
+  border: 2px solid black;
+  background-color: transparent; 
+  border: none;
 }
 
 .button {
   border-radius: 5px;
-  font-size: calc(1px + 2vmin);
-  background-color: #282C34;
-  color: white;
-  border: 1px solid white;
+  font-size: calc(10px + 2vmin);
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000;
   transition: ease-in-out 330ms;
   padding: 1%;
   width: 150px;
+  font-family: 'Bombing';
 }
 
 .button:hover {
-  background-color: #508CA4;
-  color: #bcff00;
-  border: 1px solid #bcff00;
-  text-shadow:0 0 5px #bcff00,
-  0 0 25px #bcff00,
-  0 0 50px #bcff00,
-  0 0 100px #bcff00;
-  box-shadow: 0 0 5px #bcff00
-              0 0 25px #bcff00,
-              0 0 50px #bcff00,
-              0 0 100px #bcff00;
+  /* background-color: #508CA4; */
+  color: #5dfabf;
+  border: 1px solid #000;
+  text-shadow:0 0 5px #000,
+  0 0 25px #000,
+  0 0 50px #000,
+  0 0 100px #000;
+  box-shadow: 0 0 5px #000
+  0 0 25px #000,
+  0 0 50px #000,
+  0 0 100px #000;
 }
 
 .formStyle {

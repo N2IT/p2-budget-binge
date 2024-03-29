@@ -32,17 +32,18 @@ function BalanceSummary({ initial }) {
     return (
         <>
             <div className="dbBoxPrimary">
+            <h1 className="list-header">Dashboard / Balance</h1>
                 <div className="grid-container">
-                    <h1 className="dbIncome">Total Reported Income</h1>
-                    <h1 className="dbIncome-num">${parseFloat(incomeSumTotal).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</h1>
+                    <h1 className="dbIncome test">Total Reported Income</h1>
+                    <h1 className="dbIncome-num test">${parseFloat(incomeSumTotal).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</h1>
                 </div>
                 <div className="grid-container">
-                    <h1 className="dbIncome">Total Reported Expense</h1>
-                    <h1 className="dbIncome-num">${parseFloat(expenseSumTotal).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</h1>
+                    <h1 className="dbIncome test">Total Reported Expense</h1>
+                    <h1 className="dbIncome-num test">${parseFloat(expenseSumTotal).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</h1>
                 </div>
                 <div className="grid-container">
-                <h1 className="dbIncome">Total Balance</h1>
-                <h1 className="dbIncome-num">${parseFloat(incomeSumTotal - expenseSumTotal).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</h1>
+                <h1 className="dbIncome test">Total Balance</h1>
+                <h1 className="dbIncome-num test">${parseFloat(incomeSumTotal - expenseSumTotal).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</h1>
             </div>
             </div>
 
