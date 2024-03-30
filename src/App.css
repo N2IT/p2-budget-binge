@@ -95,8 +95,16 @@ h3 {
 }
 
 .stock-price {
-  font-size: calc(17px + 9vmin);
+  font-size: calc(17px + 4vmin);
   color: #bcff00;
+}
+
+.down {
+  color: #ff6767;
+}
+
+.up {
+  color: #5dfabf;
 }
 
 .refresh-date {

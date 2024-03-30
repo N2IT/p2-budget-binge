@@ -31,6 +31,14 @@
       "category": "income",
       "description": "miscellaneous",
       "notes": "prev months balance"
+    },
+    {
+      "id": "78cf",
+      "date": "2024-04-02",
+      "amount": 5,
+      "category": "expense",
+      "description": "other",
+      "notes": "coffee"
     }
   ]
 }
