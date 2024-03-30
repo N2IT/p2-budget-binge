@@ -272,6 +272,7 @@ input {
   font-family: 'bombing';
   background: transparent;
   border: none;
+  margin: 2% 0;
 }
 
 label {
@@ -289,6 +290,7 @@ select {
   border: 2px solid black;
   background-color: transparent; 
   border: none;
+  margin: 2% 0;
 }
 
 .button {

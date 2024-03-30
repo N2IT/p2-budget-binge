@@ -23,6 +23,14 @@
       "category": "income",
       "description": "paycheck",
       "notes": ""
+    },
+    {
+      "id": "3ffb",
+      "date": "2024-04-01",
+      "amount": 3000,
+      "category": "income",
+      "description": "miscellaneous",
+      "notes": "prev months balance"
     }
   ]
 }

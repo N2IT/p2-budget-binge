@@ -83,7 +83,7 @@ function AddTransaction() {
                         </select>}
                     <br />
                     <label htmlFor='Notes'>Notes </label>
-                    <input value={notes} style={{border:"1px solid #000"}} onChange={(e) => setNotes(e.target.value)} name="notes" id="notes"></input>
+                    <input value={notes} style={{ border: "1px solid #000" }} onChange={(e) => setNotes(e.target.value)} name="notes" id="notes"></input>
                     <br />
                     {date && amount ? <button className="button" type="submit">Send It</button> : null}
                 </form>

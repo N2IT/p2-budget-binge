@@ -24,15 +24,15 @@ function Home() {
 
     const stocksToDisplay = stocks.filter((stock) => {
         if (stock.symbol === "AAPL") {
-            return stock.symbol && stock.price
+            return stock.symbol && stock.price && stock.previousClose
         } else if (stock.symbol === "META") {
-            return stock.symbol && stock.price
+            return stock.symbol && stock.price && stock.previousClose
         } else if (stock.symbol === "AMZN") {
-            return stock.symbol && stock.price
+            return stock.symbol && stock.price && stock.previousClose
         } else if (stock.symbol === 'NFLX') {
-            return stock.symbol && stock.price
+            return stock.symbol && stock.price && stock.previousClose
         } else if (stock.symbol === "GOOGL") {
-            return stock.symbol && stock.price
+            return stock.symbol && stock.price && stock.previousClose
         } else {
             return null
         }
