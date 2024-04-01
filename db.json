@@ -1,3 +1,60 @@
 {
-  "transactions": []
+  "transactions": [
+    {
+      "id": "a2dd",
+      "date": "2024-04-01",
+      "amount": 11233.34,
+      "category": "income",
+      "description": "miscellaneous",
+      "notes": "Prev Months Balance"
+    },
+    {
+      "id": "e22d",
+      "date": "2024-04-03",
+      "amount": 3000.89,
+      "category": "expense",
+      "description": "home",
+      "notes": "mortgage payment"
+    },
+    {
+      "id": "6200",
+      "date": "2024-04-06",
+      "amount": 275.34,
+      "category": "expense",
+      "description": "utilities",
+      "notes": "Light Bill"
+    },
+    {
+      "id": "f58a",
+      "date": "2024-04-13",
+      "amount": 345.67,
+      "category": "expense",
+      "description": "auto",
+      "notes": "Cars are expensive"
+    },
+    {
+      "id": "3640",
+      "date": "2024-04-07",
+      "amount": 400,
+      "category": "expense",
+      "description": "groceries",
+      "notes": "we must eat stuff"
+    },
+    {
+      "id": "2c0b",
+      "date": "2024-04-14",
+      "amount": 55.67,
+      "category": "expense",
+      "description": "entertainment",
+      "notes": "Dune 2: Take my $"
+    },
+    {
+      "id": "0578",
+      "date": "2024-04-15",
+      "amount": 795,
+      "category": "expense",
+      "description": "other",
+      "notes": "Repay loans or else"
+    }
+  ]
 }

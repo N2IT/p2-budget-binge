@@ -68,7 +68,6 @@ h3 {
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   padding: 0 5%;
-  background-color: none;
 }
 
 .stock-box {
@@ -120,7 +119,7 @@ h3 {
   display: grid;
   grid-column: 1/13;
   border: 1px solid #5dfabf;
-  box-shadow: 0 0 5px #5dfabf, 0 0 25px #5dfabf, 0 0 50px #5dfabf, 0 0 100px #5dfabf; 
+  box-shadow: 0 0 5px #5dfabf, 0 0 25px #5dfabf, 0 0 50px #5dfabf, 0 0 100px #5dfabf, inset 0 0 5px #5dfabf, inset 0 0 25px #5dfabf, 0 0 50px #5dfabf, inset 0 0 100px #5dfabf;
   border-radius: 3%;
 }
 .dbBoxPrimary {
@@ -169,7 +168,7 @@ main > .test {
   text-decoration: none;
   background-color: none;
   border: none;
-  border-radius: 8px;
+  border-radius: 3%;
   text-align: center;
 }
 
@@ -181,13 +180,17 @@ main > .test {
   margin: 5% 0;
   grid-row: 2;
   grid-column: 1 / 13;
-  border: 8px solid #bcff00;
+  border: 1px solid #bcff00;
   box-shadow: 0 0 5px #bcff00,
     0 0 25px #bcff00,
     0 0 50px #bcff00,
-    0 0 100px #bcff00;
+    0 0 100px #bcff00,
+    inset 0 0 5px #bcff00,
+    inset 0 0 25px #bcff00,
+    inset 0 0 50px #bcff00,
+    inset 0 0 100px #bcff00;
   /* background-color: #508ca48f; */
-  border-radius: 8px;
+  border-radius: 3%;
   overflow-y: auto;
   overflow-x: auto;
   height: calc(50vh - 10px);
