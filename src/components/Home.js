@@ -5,6 +5,7 @@ import React, { useState, useEffect } from "react";
 import { Outlet, useOutletContext } from "react-router-dom";
 import '../App.css';
 import RecentTransactions from "./RecentTransactions";
+import { NavLink } from "react-router-dom";
 
 function Home() {
 
@@ -64,9 +65,11 @@ function Home() {
                     <div className="recent-transactions">
                         <h2 className='list-header'>Recent Transactions</h2>
                         <RecentTransactions />
-                        {/* <div className="grid-container">
-                            
-                        </div> */}
+                        <NavLink
+                            to="/transaction-list"
+                            className="nav-link"
+                        >Manage Transactions
+                        </NavLink>
                     </div>
                 </div>
                 <Outlet context={transactions} />

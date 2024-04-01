@@ -2,7 +2,7 @@ import { useOutletContext } from "react-router-dom"
 
 
 function RecentTransactions() {
-    const [ transactions ] = useOutletContext();    
+    const [transactions] = useOutletContext();
 
     const transactionalData = transactions.map((transaction) => {
         return (
