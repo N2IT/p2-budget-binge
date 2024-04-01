@@ -90,13 +90,12 @@ h3 {
 }
 
 .stock-name {
-  font-size: calc(17px + 9vmin);
+  font-size: calc(40px + 9vmin);
   color:#03e9f4;
 }
 
 .stock-price {
   font-size: calc(17px + 4vmin);
-  color: #bcff00;
 }
 
 .down {
@@ -115,12 +114,20 @@ h3 {
 
 
 /**************************** HOME page ****************************/
+.border {
+  display: grid;
+  grid-column: 1/13;
+  border: 1px solid #5dfabf;
+  box-shadow: 0 0 5px #5dfabf, 0 0 25px #5dfabf, 0 0 50px #5dfabf, 0 0 100px #5dfabf; 
+  border-radius: 3%;
+}
 .dbBoxPrimary {
   grid-column: 1/6;
   grid-row: 1;
   background-color: transparent;
   border: none;
   border-radius: 5px;
+  /* box-shadow: 0 0 5px #5dfabf, 0 0 25px #5dfabf, 0 0 50px #5dfabf, 0 0 100px #5dfabf; */
 }
 
 .dbIncome {
@@ -129,6 +136,7 @@ h3 {
 
 .dbBoxPrimary .dbIncome {
   background-color: transparent;
+  grid-column: 1/9;
 }
 
 .dbBoxPrimary .test {
@@ -154,8 +162,8 @@ main > .test {
   text-align: center;
 }
 
-.dbIncome-num {
-  grid-column: 10/13;
+.dbBoxPrimary.dbIncome-num {
+  grid-column: 9/11;
 }
 
 .recent-transactions {
@@ -189,14 +197,15 @@ main > .test {
   /* margin: 3% 0; */
   grid-column: 7 / 13;
   grid-row: 1;
+  color: #ffffff;
   /* border: 1px solid #666; */
-  background-color: #5dfabf;
+  /* background-color: #5dfabf; */
   border-radius: 8px;
   /* padding: 2%; */
-  box-shadow: 0 0 5px #5dfabf,
+  /* box-shadow: 0 0 5px #5dfabf,
     0 0 25px #5dfabf,
     0 0 50px #5dfabf,
-    0 0 100px #5dfabf;
+    0 0 100px #5dfabf; */
   
 }
 
@@ -252,7 +261,6 @@ tfoot td {
   0 0 50px #ff6767,
   0 0 100px #ff6767;
 }
-
 
 /**************************** Add Transactions page ************************/
 

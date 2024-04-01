@@ -1,8 +1,9 @@
 import { useOutletContext } from "react-router-dom"
+import { useEffect } from 'react'
 
 
 function TransactionComponent() {
-    const [transactions, onDeleteItem] = useOutletContext();
+    const [transactions, onDeleteItem, onAddTransaction, setTransactions] = useOutletContext();
 
     function handleDelete(deletedLine) {
         // console.log(deletedLine.id)
@@ -16,22 +17,20 @@ function TransactionComponent() {
             });
     }
 
+    useEffect(() => {
+        // debugger
+        if (transactions.some(transaction => transaction.isHighlighted)) {
+            // debugger
+            const timer = setTimeout(() => {
+                setTransactions(transactions =>
+                    transactions.map(transaction =>
+                        transaction.isHighlighted ? { ...transaction, isHighlighted: false } : transaction))
+            }, 5000);
+            return () => clearTimeout(timer)
+        }
+    }, [transactions])
 
-    const transactionalData = transactions.map((transaction) => {
-        return (
-            <tbody key={transaction.id}>
-                <tr>
-                    <td>{transaction.date}</td>
-                    <td>{transaction.category}</td>
-                    <td>{transaction.description}</td>
-                    <td>${parseFloat(transaction.amount).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</td>
-                    <td>{transaction.notes}</td>
-                    <td><h1 className="delete-btn" title="delete" onClick={() => handleDelete(transaction)}> X </h1></td>
-                </tr>
-            </tbody>
-        )
-    })
-
+    
     return (
         <>
             <table>
@@ -45,10 +44,22 @@ function TransactionComponent() {
                         <th>DELETE</th>
                     </tr>
                 </thead>
-                {transactionalData}
+                <tbody>
+                    {transactions.map((transaction) => (
+                        <tr key={transaction.id} style={{ backgroundColor: transaction.isHighlighted ? '#bcff00' : 'transparent' }}>
+                            <td>{transaction.date}</td>
+                            <td>{transaction.category}</td>
+                            <td>{transaction.description}</td>
+                            <td>${parseFloat(transaction.amount).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</td>
+                            <td>{transaction.notes}</td>
+                            <td><h1 className="delete-btn" title="delete" onClick={() => handleDelete(transaction)}> X </h1></td>
+                        </tr>
+                    ))}
+                </tbody>
             </table>
         </>
     )
+    
 }
 
 export default TransactionComponent

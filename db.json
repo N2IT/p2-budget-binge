@@ -1,44 +1,60 @@
 {
   "transactions": [
     {
-      "id": "6f33",
-      "date": "2024-03-08",
-      "amount": 2234,
-      "category": "income",
-      "description": "paycheck",
-      "notes": ""
-    },
-    {
-      "id": "bee9",
-      "date": "2024-03-16",
-      "amount": 100,
-      "category": "income",
-      "description": "paycheck",
-      "notes": "Test"
-    },
-    {
-      "id": "3d92",
-      "date": "2024-03-15",
-      "amount": 9000,
-      "category": "income",
-      "description": "paycheck",
-      "notes": ""
-    },
-    {
-      "id": "3ffb",
+      "id": "2d80",
       "date": "2024-04-01",
-      "amount": 3000,
+      "amount": 11354.23,
       "category": "income",
       "description": "miscellaneous",
-      "notes": "prev months balance"
+      "notes": "Prev month balance"
     },
     {
-      "id": "78cf",
-      "date": "2024-04-02",
-      "amount": 5,
-      "category": "expense",
-      "description": "other",
-      "notes": "coffee"
+      "id": "b4e6",
+      "date": "2024-04-28",
+      "amount": 22222,
+      "category": "income",
+      "description": "paycheck",
+      "notes": ""
+    },
+    {
+      "id": "3447",
+      "date": "2024-04-08",
+      "amount": 1,
+      "category": "income",
+      "description": "paycheck",
+      "notes": ""
+    },
+    {
+      "id": "de85",
+      "date": "2024-04-17",
+      "amount": 343,
+      "category": "income",
+      "description": "paycheck",
+      "notes": ""
+    },
+    {
+      "id": "529b",
+      "date": "2024-04-18",
+      "amount": 12345,
+      "category": "income",
+      "description": "paycheck",
+      "notes": "ebugger"
+    },
+    {
+      "id": "e069",
+      "date": "2024-05-03",
+      "amount": 3445,
+      "category": "income",
+      "description": "paycheck",
+      "notes": "wroking?"
+    },
+    {
+      "id": "b7e3",
+      "date": "2024-04-19",
+      "amount": 2334,
+      "category": "income",
+      "description": "paycheck",
+      "notes": "wohoo!"
     }
   ]
 }

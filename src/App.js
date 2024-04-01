@@ -26,7 +26,8 @@ function App() {
   }
 
   function onAddTransaction(info) {
-    setTransactions([...transactions, info])
+    setTransactions([...transactions, { ...info, isHighlighted: true }])
+    // debugger
   }
 
   return (
@@ -34,7 +35,7 @@ function App() {
       <div className="App-header">
         <NavBar />
       </div>
-      <Outlet context={[transactions, onDeleteItem, onAddTransaction]} />
+      <Outlet context={[transactions, onDeleteItem, onAddTransaction, setTransactions]} />
     </>
   );
 }
