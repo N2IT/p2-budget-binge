@@ -95,7 +95,8 @@ h3 {
 }
 
 .stock-price {
-  font-size: calc(17px + 4vmin);
+  font-size: calc(17px + 3vmin);
+  font-family: cursive;
 }
 
 .down {
@@ -107,7 +108,8 @@ h3 {
 }
 
 .refresh-date {
-  font-size: calc(15px + 5vmin);
+  font-size: calc(15px + 3vmin);
+  font-family: cursive;
   padding: 0 3px;
   color: #ffffff
 }
@@ -127,11 +129,17 @@ h3 {
   background-color: transparent;
   border: none;
   border-radius: 5px;
+  
   /* box-shadow: 0 0 5px #5dfabf, 0 0 25px #5dfabf, 0 0 50px #5dfabf, 0 0 100px #5dfabf; */
 }
 
 .dbIncome {
   grid-column: 1/9;
+  text-shadow: 0 0 5px #000, 0 0 25px #000, 0 0 50px #000, 0 0 100px #000;
+}
+
+.dbIncome-num {
+  text-shadow: 0 0 5px #000, 0 0 25px #000, 0 0 50px #000, 0 0 100px #000;
 }
 
 .dbBoxPrimary .dbIncome {
@@ -140,8 +148,11 @@ h3 {
 }
 
 .dbBoxPrimary .test {
-  font-size: calc(50px + 3vmin);
+  font-size: calc(25px + 3vmin);
+  font-family: cursive;
   color: #5dfabf;
+  text-shadow: 0 0 5px #000, 0 0 25px #000, 0 0 50px #000, 0 0 100px #000;
+  margin: 0 0 2rem; 
   
 }
 
@@ -184,6 +195,7 @@ main > .test {
 }
 
 .list-header {
+  font-family: cursive;
   font-size: calc(15px + 3vmin);
   padding: 0 4%;
   color: #C64191;
@@ -212,9 +224,10 @@ main > .test {
 .category-breakdown .dbIncome,
 .category-breakdown .dbIncome-num {
   background-color: transparent;
-  margin: 0;
+  margin: 0 0 1rem;
   padding: 0;
-  font-size: calc(35px + 4vmin);
+  font-size: calc(25px + 3vmin);
+  font-family: cursive;
 } 
 
 
@@ -228,15 +241,16 @@ main > .test {
 table, th, td {
   border: 1px solid #ffffff;
   color: white;
+  font-family: cursive;
 }
 
 th {
-  font-size: calc(35px + 2vmin);
+  font-size: calc(25px + 3vmin);
   width: 1%;
 }
 
 td {
-  font-size: calc(25px + 4vmin);
+  font-size: calc(20px + 3vmin);
   text-align: center;
   overflow-x: hidden;
   white-space: nowrap;
@@ -262,6 +276,18 @@ tfoot td {
   0 0 100px #ff6767;
 }
 
+.highlighted {
+  background-color: #bcff00;
+  box-shadow: 0 0 5px #bcff00, 0 0 25px #bcff00, 0 0 50px #bcff00, 0 0 100px #bcff00;
+  transition: all 300ms ease-in-out;
+}
+
+table tr {
+  transition: all 300ms ease-in-out;
+  color: white;
+  background: transparent;
+}
+
 /**************************** Add Transactions page ************************/
 
 .add-transactions-form{
@@ -285,7 +311,7 @@ input {
   text-align: center;
   border-radius: 5px;
   margin: 0;
-  font-family: 'bombing';
+  font-family: cursive;
   background: transparent;
   border: none;
   margin: 2% 0;
@@ -297,8 +323,8 @@ label {
 
 select {
   width: 250px;
-  height: 35px;
-  font-family: 'bombing';
+  height: 55px;
+  font-family: cursive;
   font-size: calc(15px + 2vmin);
   text-align: center;
   border-radius: 5px;
@@ -311,28 +337,23 @@ select {
 
 .button {
   border-radius: 5px;
-  font-size: calc(10px + 2vmin);
-  background-color: transparent;
+  font-size: calc(15px + 2vmin);
+  background-color: #ffe26a;
   color: #000;
-  border: 1px solid #000;
-  transition: ease-in-out 330ms;
+  transition: ease-in-out 300ms;
   padding: 1%;
   width: 150px;
   font-family: 'Bombing';
+  box-shadow: 3px 3px 5px #666;
 }
 
 .button:hover {
-  /* background-color: #508CA4; */
-  color: #5dfabf;
-  border: 1px solid #000;
-  text-shadow:0 0 5px #000,
-  0 0 25px #000,
-  0 0 50px #000,
-  0 0 100px #000;
-  box-shadow: 0 0 5px #000
-  0 0 25px #000,
-  0 0 50px #000,
-  0 0 100px #000;
+  background-color: #000;
+  color: #ffe26a;
+  box-shadow: 0 0 5px #ffe26a,
+  0 0 25px #ffe26a,
+  0 0 50px #ffe26a,
+  0 0 100px #ffe26a;
 }
 
 .formStyle {

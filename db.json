@@ -1,33 +1,9 @@
 {
   "transactions": [
     {
-      "id": "2d80",
-      "date": "2024-04-01",
-      "amount": 11354.23,
-      "category": "income",
-      "description": "miscellaneous",
-      "notes": "Prev month balance"
-    },
-    {
-      "id": "b4e6",
-      "date": "2024-04-28",
-      "amount": 22222,
-      "category": "income",
-      "description": "paycheck",
-      "notes": ""
-    },
-    {
       "id": "3447",
       "date": "2024-04-08",
       "amount": 1,
-      "category": "income",
-      "description": "paycheck",
-      "notes": ""
-    },
-    {
-      "id": "de85",
-      "date": "2024-04-17",
-      "amount": 343,
       "category": "income",
       "description": "paycheck",
       "notes": ""
@@ -55,6 +31,30 @@
       "category": "income",
       "description": "paycheck",
       "notes": "wohoo!"
+    },
+    {
+      "id": "39bd",
+      "date": "2024-04-19",
+      "amount": 3444,
+      "category": "expense",
+      "description": "utilities",
+      "notes": "Get it"
+    },
+    {
+      "id": "2f3c",
+      "date": "2024-04-27",
+      "amount": 9829.22,
+      "category": "expense",
+      "description": "auto",
+      "notes": "cars are expensive"
+    },
+    {
+      "id": "4dc8",
+      "date": "2024-04-03",
+      "amount": 345.33,
+      "category": "expense",
+      "description": "utilities",
+      "notes": "Waste / Water"
     }
   ]
 }

@@ -49,14 +49,14 @@ function Home() {
                     <div className='border'>
                         <BalanceSummary initial={initial} />
                         <div className="category-breakdown">
-                            <h2 className="list-header">Percentage Breakdown by Expense</h2>
+                            <h2 className="list-header">% Breakdown by Expense</h2>
                             <div className="grid-container">
                                 <CategorySummary initial={initial} />
                             </div>
                         </div>
                     </div>
                     <div className="dbTickerSideBar">
-                        <div className="refresh-date">{`Current Date / Time: ${timeStamp}`}<br /><br /><span>MAANG Stock Tickers (Update on Refresh)</span></div>
+                        <div className="refresh-date">{`Current Date / Time: ${timeStamp}`}<br /><br /><span>MAANG Stock Tickers vs Prior Days Closing Price (Update on Refresh)</span></div>
                         <div className="stock-box">
                             <StockComponent stocks={stocksToDisplay} loading={isLoading} />
                         </div>

@@ -25,7 +25,7 @@ function TransactionComponent() {
                 setTransactions(transactions =>
                     transactions.map(transaction =>
                         transaction.isHighlighted ? { ...transaction, isHighlighted: false } : transaction))
-            }, 5000);
+            }, 3000);
             return () => clearTimeout(timer)
         }
     }, [transactions])
@@ -46,7 +46,7 @@ function TransactionComponent() {
                 </thead>
                 <tbody>
                     {transactions.map((transaction) => (
-                        <tr key={transaction.id} style={{ backgroundColor: transaction.isHighlighted ? '#bcff00' : 'transparent' }}>
+                        <tr key={transaction.id} className={transaction.isHighlighted ? 'highlighted' : ''}>
                             <td>{transaction.date}</td>
                             <td>{transaction.category}</td>
                             <td>{transaction.description}</td>
