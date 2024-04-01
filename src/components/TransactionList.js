@@ -18,9 +18,7 @@ function TransactionComponent() {
     }
 
     useEffect(() => {
-        // debugger
         if (transactions.some(transaction => transaction.isHighlighted)) {
-            // debugger
             const timer = setTimeout(() => {
                 setTransactions(transactions =>
                     transactions.map(transaction =>
@@ -58,8 +56,7 @@ function TransactionComponent() {
                 </tbody>
             </table>
         </>
-    )
-    
+    )  
 }
 
 export default TransactionComponent
