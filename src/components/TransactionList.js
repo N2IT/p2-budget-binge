@@ -23,7 +23,7 @@ function TransactionComponent() {
                 setTransactions(transactions =>
                     transactions.map(transaction =>
                         transaction.isHighlighted ? { ...transaction, isHighlighted: false } : transaction))
-            }, 3000);
+            }, 500);
             return () => clearTimeout(timer)
         }
     }, [transactions])
